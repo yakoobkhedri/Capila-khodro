@@ -1,27 +1,24 @@
 // swiper
 
-var blog = new Swiper(".blog", {
+var newCars = new Swiper(".newCars", {
   slidesPerView: 1,
   loop: true,
    autoplay: {
     delay: 3000,
     disableOnInteraction: false, // توقف نشود!
 },
-  spaceBetween: 30,
+  spaceBetween: 24,
   breakpoints: {
-    630: {
-      slidesPerView: 2,
-    },
     768: {
       slidesPerView: 2,
     },
     1200: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     }
   },
   navigation: {
-    nextEl: '.swiper-button-next2', // دکمه بعدی
-    prevEl: '.swiper-button-prev2', // دکمه قبلی
+    nextEl: '.swiper-button-next', // دکمه بعدی
+    prevEl: '.swiper-button-prev', // دکمه قبلی
   },
 });
 // acordion

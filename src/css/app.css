@@ -2,137 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-/* IranYekanFaNum */
+/* Yekan Bakh FaNum */
 
 @font-face {
-  font-family: IranYekanFaNum-Thin;
+  font-family: YekanBakh-Thin;
   font-weight: 100;
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Thin.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Thin.woff') format("woff");
 }
 @font-face {
-  font-family: IranYekanFaNum-Light;
+  font-family: YekanBakh-Light;
   font-weight: 300;
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Light.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Light.woff') format("woff");
 }
 @font-face {
-  font-family: IranYekanFaNum-Regular;
+  font-family: YekanBakh-Regular;
   font-weight: 400;
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Regular.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Regular.woff') format("woff");
 }
 @font-face {
-  font-family: IranYekanFaNum-Medium;
+  font-family: YekanBakh-Medium;
   font-weight: 500;
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Medium.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Medium.woff') format("woff");
 }
 @font-face {
-  font-family: IranYekanFaNum-SemiBold;
+  font-family: YekanBakh-SemiBold;
   font-weight: 600;
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-DemiBold.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-DemiBold.woff') format("woff");
 }
 @font-face {
-  font-family: IranYekanFaNum-Bold;
+  font-family: YekanBakh-Bold;
   font-weight: 700;
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Bold.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Bold.woff') format("woff");
 }
 @font-face {
-  font-family: IranYekanFaNum-ExtraBold;
+  font-family: YekanBakh-ExtraBold;
   font-weight: 800;
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-ExtraBold.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-ExtraBold.woff') format("woff");
 }
 @font-face {
-  font-family: IranYekanFaNum-Black;
+  font-family: YekanBakh-Black;
   font-weight: 900;
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Black.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Black.woff') format("woff");
 }
-@font-face {
-  font-family: IranYekanFaNum-ExtraBlack;
-  font-weight: 950;
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-ExtraBlack.woff') format("woff");
-}
-/* IranSansFaNum */
+
+/* Morabba */
 
 @font-face {
-  font-family: IranSansFaNum-Thin;
+  font-family: Morabba-Thin;
   font-weight: 100;
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-Thin.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-Thin.woff') format("woff");
 }
 @font-face {
-  font-family: IranSansFaNum-Light;
+  font-family: Morabba-Light;
   font-weight: 300;
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-Light.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-Light.woff') format("woff");
 }
 @font-face {
-  font-family: IranSansFaNum-Regular;
+  font-family: Morabba-Regular;
   font-weight: 400;
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-Regular.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-Regular.woff') format("woff");
 }
 @font-face {
-  font-family: IranSansFaNum-Medium;
+  font-family: Morabba-Medium;
   font-weight: 500;
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-Medium.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-Medium.woff') format("woff");
 }
 @font-face {
-  font-family: IranSansFaNum-SemiBold;
+  font-family: Morabba-SemiBold;
   font-weight: 600;
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-DemiBold.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-SemiBold.woff') format("woff");
 }
 @font-face {
-  font-family: IranSansFaNum-Bold;
+  font-family: Morabba-Bold;
   font-weight: 700;
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-Bold.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-Bold.woff') format("woff");
 }
 @font-face {
-  font-family: IranSansFaNum-ExtraBold;
+  font-family: Morabba-ExtraBold;
   font-weight: 800;
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-ExtraBold.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-ExtraBold.woff') format("woff");
 }
 @font-face {
-  font-family: IranSansFaNum-Black;
+  font-family: Morabba-Black;
   font-weight: 900;
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-Black.woff') format("woff");
-}
-
-/* RokhFaNum */
-
-@font-face {
-  font-family: RokhFaNum-Thin;
-  font-weight: 100;
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-Thin.woff') format("woff");
-}
-@font-face {
-  font-family: RokhFaNum-Light;
-  font-weight: 300;
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-Light.woff') format("woff");
-}
-@font-face {
-  font-family: RokhFaNum-Regular;
-  font-weight: 400;
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-Regular.woff') format("woff");
-}
-@font-face {
-  font-family: RokhFaNum-Medium;
-  font-weight: 500;
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-Medium.woff') format("woff");
-}
-@font-face {
-  font-family: RokhFaNum-SemiBold;
-  font-weight: 600;
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-SemiBold.woff') format("woff");
-}
-@font-face {
-  font-family: RokhFaNum-Bold;
-  font-weight: 700;
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-Bold.woff') format("woff");
-}
-@font-face {
-  font-family: RokhFaNum-ExtraBold;
-  font-weight: 800;
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-ExtraBold.woff') format("woff");
-}
-@font-face {
-  font-family: RokhFaNum-Black;
-  font-weight: 900;
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-Black.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-Black.woff') format("woff");
 }
 
 /* Montserrat */
@@ -140,39 +93,39 @@
 @font-face {
   font-family: Montserrat-Regular;
 
-  src: url('../src/fonts/Montserrat-Regular.ttf') format("trueType");
+  src: url('../src/fonts/Montserrat/Montserrat-Regular.ttf') format("trueType");
 }
 @font-face {
   font-family: Montserrat-Bold;
 
-  src: url('../src/fonts/Montserrat-Bold.ttf') format("trueType");
+  src: url('../src/fonts/Montserrat/Montserrat-Bold.ttf') format("trueType");
 }
 
 /*  */
 
 .font-normal{
   font-weight: 400;
-  @apply rtl:font-iranSansRegular ltr:font-MontserratRegular;
+  @apply rtl:font-yekanBakhRegular ltr:font-MontserratRegular;
 }
 .font-medium{
   font-weight: 500;
-  @apply rtl:font-iranSansMedium ltr:font-MontserratRegular;
+  @apply rtl:font-yekanBakhMedium ltr:font-MontserratRegular;
 }
 .font-semibold{
   font-weight: 600;
-  @apply rtl:font-iranSansSemiBold ltr:font-MontserratBold;
+  @apply rtl:font-yekanBakhSemiBold ltr:font-MontserratBold;
 }
 .font-bold{
   font-weight: 700;
-  @apply rtl:font-iranSansBold ltr:font-MontserratBold;
+  @apply rtl:font-yekanBakhBold ltr:font-MontserratBold;
 }
 .font-extrabold{
   font-weight: 800;
-  @apply rtl:font-iranSansExtraBold ltr:font-MontserratBold;
+  @apply rtl:font-yekanBakhExtraBold ltr:font-MontserratBold;
 }
 .font-black{
   font-weight: 900;
-  @apply rtl:font-iranSansBlack ltr:font-MontserratBold;
+  @apply rtl:font-yekanBakhBlack ltr:font-MontserratBold;
 }
 .font-MorabbaExtraBold{
   font-family: Morabba-ExtraBold;
@@ -182,7 +135,7 @@ html {
 }
 
 body {
-  font-family: IranSansFaNum-Regular!important;
+  font-family: YekanBakh-Regular!important;
   user-select: none;
   overflow-x: hidden;
   background-color: #F5F5F5;

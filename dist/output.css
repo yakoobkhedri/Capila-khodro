@@ -596,6 +596,18 @@ video {
   inset: 0px;
 }
 
+.-top-3 {
+  top: -0.75rem;
+}
+
+.-top-5 {
+  top: -1.25rem;
+}
+
+.-top-\[170px\] {
+  top: -170px;
+}
+
 .left-4 {
   left: 1rem;
 }
@@ -608,8 +620,24 @@ video {
   top: 1.25rem;
 }
 
-.-top-5 {
-  top: -1.25rem;
+.top-2 {
+  top: 0.5rem;
+}
+
+.top-2\.5 {
+  top: 0.625rem;
+}
+
+.-top-4 {
+  top: -1rem;
+}
+
+.-top-2 {
+  top: -0.5rem;
+}
+
+.-top-2\.5 {
+  top: -0.625rem;
 }
 
 .z-\[999\] {
@@ -620,9 +648,9 @@ video {
   order: 0;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.mx-\[30px\] {
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .mx-\[50px\] {
@@ -630,18 +658,35 @@ video {
   margin-right: 50px;
 }
 
-.mx-\[30px\] {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
 .mx-\[60px\] {
   margin-left: 60px;
   margin-right: 60px;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .-mt-2 {
   margin-top: -0.5rem;
+}
+
+.-mt-\[242px\] {
+  margin-top: -242px;
+}
+
+.-mt-\[69px\] {
+  margin-top: -69px;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .mb-4 {
@@ -650,22 +695,6 @@ video {
 
 .mb-5 {
   margin-bottom: 1.25rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
 }
 
 .mb-\[22px\] {
@@ -678,6 +707,38 @@ video {
 
 .mt-0\.5 {
   margin-top: 0.125rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.mt-\[71px\] {
+  margin-top: 71px;
+}
+
+.mt-\[22px\] {
+  margin-top: 22px;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -712,6 +773,22 @@ video {
   display: none;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-7 {
   height: 1.75rem;
 }
@@ -724,20 +801,40 @@ video {
   height: 2.25rem;
 }
 
+.h-\[14px\] {
+  height: 14px;
+}
+
 .h-\[18px\] {
   height: 18px;
 }
 
-.h-3 {
-  height: 0.75rem;
+.h-\[22px\] {
+  height: 22px;
+}
+
+.h-\[420px\] {
+  height: 420px;
+}
+
+.h-\[495px\] {
+  height: 495px;
 }
 
 .h-full {
   height: 100%;
 }
 
+.h-\[71px\] {
+  height: 71px;
+}
+
 .min-h-\[489px\] {
   min-height: 489px;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-8 {
@@ -748,8 +845,16 @@ video {
   width: 2.25rem;
 }
 
+.w-\[14px\] {
+  width: 14px;
+}
+
 .w-\[1px\] {
   width: 1px;
+}
+
+.w-\[495px\] {
+  width: 495px;
 }
 
 .w-\[50px\] {
@@ -796,6 +901,10 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-end {
   align-items: flex-end;
 }
@@ -808,6 +917,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-16 {
   gap: 4rem;
 }
@@ -816,20 +929,8 @@ video {
   gap: 0.5rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-\[14px\] {
-  gap: 14px;
-}
-
-.gap-5 {
-  gap: 1.25rem;
-}
-
-.gap-14 {
-  gap: 3.5rem;
+.gap-2\.5 {
+  gap: 0.625rem;
 }
 
 .gap-3 {
@@ -840,12 +941,36 @@ video {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-\[14px\] {
+  gap: 14px;
+}
+
+.gap-\[5px\] {
+  gap: 5px;
+}
+
+.gap-\[7px\] {
+  gap: 7px;
+}
+
 .overflow-x-auto {
   overflow-x: auto;
 }
 
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .rounded-\[15px\] {
@@ -856,6 +981,14 @@ video {
   border-radius: 24px;
 }
 
+.rounded-\[28px\] {
+  border-radius: 28px;
+}
+
+.rounded-\[30px\] {
+  border-radius: 30px;
+}
+
 .rounded-\[999px\] {
   border-radius: 999px;
 }
@@ -864,8 +997,20 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-\[30px\] {
-  border-radius: 30px;
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-\[9px\] {
+  border-radius: 9px;
+}
+
+.rounded-\[20px\] {
+  border-radius: 20px;
 }
 
 .rounded-b-\[30px\] {
@@ -894,6 +1039,30 @@ video {
   border-color: #00000014;
 }
 
+.border-\[\#B2B2B2\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(178 178 178 / var(--tw-border-opacity));
+}
+
+.border-\[\#0000001F\] {
+  border-color: #0000001F;
+}
+
+.bg-\[\#000000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#B2B2B2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(178 178 178 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#E5E5E5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#E8EDF3\] {
   --tw-bg-opacity: 1;
   background-color: rgb(232 237 243 / var(--tw-bg-opacity));
@@ -904,12 +1073,22 @@ video {
   background-color: rgb(235 235 235 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#EEF1FB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 241 251 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#FF53541F\] {
   background-color: #FF53541F;
 }
 
 .bg-black\/60 {
   background-color: rgb(0 0 0 / 0.6);
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 83 84 / var(--tw-bg-opacity));
 }
 
 .bg-secondary {
@@ -931,30 +1110,41 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 83 84 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#000000\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-4 {
   padding: 1rem;
 }
 
-.p-\[5px\] {
-  padding: 5px;
+.p-5 {
+  padding: 1.25rem;
 }
 
 .p-7 {
   padding: 1.75rem;
+}
+
+.p-\[22px\] {
+  padding: 22px;
+}
+
+.p-\[5px\] {
+  padding: 5px;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-4 {
@@ -967,6 +1157,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.px-\[17px\] {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -977,9 +1172,18 @@ video {
   padding-bottom: 26px;
 }
 
-.px-\[17px\] {
-  padding-left: 17px;
-  padding-right: 17px;
+.px-\[11px\] {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .pb-\[30px\] {
@@ -990,14 +1194,6 @@ video {
   padding-top: 1rem;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
-.pt-\[82px\] {
-  padding-top: 82px;
-}
-
 .pt-\[37px\] {
   padding-top: 37px;
 }
@@ -1006,8 +1202,28 @@ video {
   padding-top: 66px;
 }
 
+.pb-\[14px\] {
+  padding-bottom: 14px;
+}
+
+.pt-\[42px\] {
+  padding-top: 42px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
+}
+
+.text-\[17px\] {
+  font-size: 17px;
+}
+
+.text-\[25px\] {
+  font-size: 25px;
 }
 
 .text-lg {
@@ -1023,10 +1239,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[25px\] {
-  font-size: 25px;
 }
 
 .font-bold {
@@ -1056,8 +1268,16 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .opacity-30 {
   opacity: 0.3;
+}
+
+.opacity-40 {
+  opacity: 0.4;
 }
 
 .opacity-50 {
@@ -1113,210 +1333,136 @@ video {
   transition-duration: 150ms;
 }
 
-/* IranYekanFaNum */
+/* Yekan Bakh FaNum */
 
 @font-face {
-  font-family: IranYekanFaNum-Thin;
+  font-family: YekanBakh-Thin;
 
   font-weight: 100;
 
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Thin.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Thin.woff') format("woff");
 }
 
 @font-face {
-  font-family: IranYekanFaNum-Light;
+  font-family: YekanBakh-Light;
 
   font-weight: 300;
 
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Light.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Light.woff') format("woff");
 }
 
 @font-face {
-  font-family: IranYekanFaNum-Regular;
+  font-family: YekanBakh-Regular;
 
   font-weight: 400;
 
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Regular.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Regular.woff') format("woff");
 }
 
 @font-face {
-  font-family: IranYekanFaNum-Medium;
+  font-family: YekanBakh-Medium;
 
   font-weight: 500;
 
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Medium.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Medium.woff') format("woff");
 }
 
 @font-face {
-  font-family: IranYekanFaNum-SemiBold;
+  font-family: YekanBakh-SemiBold;
 
   font-weight: 600;
 
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-DemiBold.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-DemiBold.woff') format("woff");
 }
 
 @font-face {
-  font-family: IranYekanFaNum-Bold;
+  font-family: YekanBakh-Bold;
 
   font-weight: 700;
 
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Bold.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Bold.woff') format("woff");
 }
 
 @font-face {
-  font-family: IranYekanFaNum-ExtraBold;
+  font-family: YekanBakh-ExtraBold;
 
   font-weight: 800;
 
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-ExtraBold.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-ExtraBold.woff') format("woff");
 }
 
 @font-face {
-  font-family: IranYekanFaNum-Black;
+  font-family: YekanBakh-Black;
 
   font-weight: 900;
 
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Black.woff') format("woff");
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Black.woff') format("woff");
 }
 
-@font-face {
-  font-family: IranYekanFaNum-ExtraBlack;
-
-  font-weight: 950;
-
-  src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-ExtraBlack.woff') format("woff");
-}
-
-/* IranSansFaNum */
+/* Morabba */
 
 @font-face {
-  font-family: IranSansFaNum-Thin;
+  font-family: Morabba-Thin;
 
   font-weight: 100;
 
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-Thin.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-Thin.woff') format("woff");
 }
 
 @font-face {
-  font-family: IranSansFaNum-Light;
+  font-family: Morabba-Light;
 
   font-weight: 300;
 
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-Light.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-Light.woff') format("woff");
 }
 
 @font-face {
-  font-family: IranSansFaNum-Regular;
+  font-family: Morabba-Regular;
 
   font-weight: 400;
 
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-Regular.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-Regular.woff') format("woff");
 }
 
 @font-face {
-  font-family: IranSansFaNum-Medium;
+  font-family: Morabba-Medium;
 
   font-weight: 500;
 
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-Medium.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-Medium.woff') format("woff");
 }
 
 @font-face {
-  font-family: IranSansFaNum-SemiBold;
+  font-family: Morabba-SemiBold;
 
   font-weight: 600;
 
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-DemiBold.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-SemiBold.woff') format("woff");
 }
 
 @font-face {
-  font-family: IranSansFaNum-Bold;
+  font-family: Morabba-Bold;
 
   font-weight: 700;
 
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-Bold.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-Bold.woff') format("woff");
 }
 
 @font-face {
-  font-family: IranSansFaNum-ExtraBold;
+  font-family: Morabba-ExtraBold;
 
   font-weight: 800;
 
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-ExtraBold.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-ExtraBold.woff') format("woff");
 }
 
 @font-face {
-  font-family: IranSansFaNum-Black;
+  font-family: Morabba-Black;
 
   font-weight: 900;
 
-  src: url('../src/fonts/IranSansX(Pro)/IRANSansXFaNum-Black.woff') format("woff");
-}
-
-/* RokhFaNum */
-
-@font-face {
-  font-family: RokhFaNum-Thin;
-
-  font-weight: 100;
-
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-Thin.woff') format("woff");
-}
-
-@font-face {
-  font-family: RokhFaNum-Light;
-
-  font-weight: 300;
-
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-Light.woff') format("woff");
-}
-
-@font-face {
-  font-family: RokhFaNum-Regular;
-
-  font-weight: 400;
-
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-Regular.woff') format("woff");
-}
-
-@font-face {
-  font-family: RokhFaNum-Medium;
-
-  font-weight: 500;
-
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-Medium.woff') format("woff");
-}
-
-@font-face {
-  font-family: RokhFaNum-SemiBold;
-
-  font-weight: 600;
-
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-SemiBold.woff') format("woff");
-}
-
-@font-face {
-  font-family: RokhFaNum-Bold;
-
-  font-weight: 700;
-
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-Bold.woff') format("woff");
-}
-
-@font-face {
-  font-family: RokhFaNum-ExtraBold;
-
-  font-weight: 800;
-
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-ExtraBold.woff') format("woff");
-}
-
-@font-face {
-  font-family: RokhFaNum-Black;
-
-  font-weight: 900;
-
-  src: url('../src/fonts/Rokh_Pro/RokhFaNum-Black.woff') format("woff");
+  src: url('../src/fonts/Morabba/Morabba-Black.woff') format("woff");
 }
 
 /* Montserrat */
@@ -1324,13 +1470,13 @@ video {
 @font-face {
   font-family: Montserrat-Regular;
 
-  src: url('../src/fonts/Montserrat-Regular.ttf') format("trueType");
+  src: url('../src/fonts/Montserrat/Montserrat-Regular.ttf') format("trueType");
 }
 
 @font-face {
   font-family: Montserrat-Bold;
 
-  src: url('../src/fonts/Montserrat-Bold.ttf') format("trueType");
+  src: url('../src/fonts/Montserrat/Montserrat-Bold.ttf') format("trueType");
 }
 
 /*  */
@@ -1344,7 +1490,7 @@ video {
 }
 
 :is([dir="rtl"] .font-normal) {
-  font-family: IranSansFaNum-Regular;
+  font-family: YekanBakh-Regular;
 }
 
 .font-medium{
@@ -1356,7 +1502,7 @@ video {
 }
 
 :is([dir="rtl"] .font-medium) {
-  font-family: IranSansFaNum-Medium;
+  font-family: YekanBakh-Medium;
 }
 
 .font-semibold{
@@ -1368,7 +1514,7 @@ video {
 }
 
 :is([dir="rtl"] .font-semibold) {
-  font-family: IranSansFaNum-SemiBold;
+  font-family: YekanBakh-SemiBold;
 }
 
 .font-bold{
@@ -1380,7 +1526,7 @@ video {
 }
 
 :is([dir="rtl"] .font-bold) {
-  font-family: IranSansFaNum-Bold;
+  font-family: YekanBakh-Bold;
 }
 
 .font-extrabold{
@@ -1392,7 +1538,7 @@ video {
 }
 
 :is([dir="rtl"] .font-extrabold) {
-  font-family: IranSansFaNum-ExtraBold;
+  font-family: YekanBakh-ExtraBold;
 }
 
 .font-black{
@@ -1404,7 +1550,7 @@ video {
 }
 
 :is([dir="rtl"] .font-black) {
-  font-family: IranSansFaNum-Black;
+  font-family: YekanBakh-Black;
 }
 
 .font-MorabbaExtraBold{
@@ -1416,7 +1562,7 @@ html {
 }
 
 body {
-  font-family: IranSansFaNum-Regular!important;
+  font-family: YekanBakh-Regular!important;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -1621,7 +1767,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 :is([dir="rtl"] .editor-section th) {
-  font-family: IranSansFaNum-ExtraBold;
+  font-family: YekanBakh-ExtraBold;
 }
 
 @media (min-width: 640px) {
@@ -1821,7 +1967,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 :is([dir="rtl"] .editor-section ul li) {
-  font-family: IranSansFaNum-SemiBold;
+  font-family: YekanBakh-SemiBold;
 }
 
 .editor-section ul li:last-child {
@@ -1972,6 +2118,22 @@ input[type="number"]::-webkit-outer-spin-button {
   left: 0.5rem;
 }
 
+:is([dir="ltr"] .ltr\:left-3) {
+  left: 0.75rem;
+}
+
+:is([dir="ltr"] .ltr\:right-0) {
+  right: 0px;
+}
+
+:is([dir="ltr"] .ltr\:right-4) {
+  right: 1rem;
+}
+
+:is([dir="ltr"] .ltr\:mr-10) {
+  margin-right: 2.5rem;
+}
+
 :is([dir="ltr"] .ltr\:mr-11) {
   margin-right: 2.75rem;
 }
@@ -1989,12 +2151,36 @@ input[type="number"]::-webkit-outer-spin-button {
   padding-right: 1.25rem;
 }
 
+:is([dir="ltr"] .ltr\:font-MontserratBold) {
+  font-family: Montserrat-Bold;
+}
+
+:is([dir="ltr"] .ltr\:font-MontserratRegular) {
+  font-family: Montserrat-Regular;
+}
+
 :is([dir="rtl"] .rtl\:-left-\[28px\]) {
   left: -28px;
 }
 
 :is([dir="rtl"] .rtl\:right-2) {
   right: 0.5rem;
+}
+
+:is([dir="rtl"] .rtl\:right-3) {
+  right: 0.75rem;
+}
+
+:is([dir="rtl"] .rtl\:left-0) {
+  left: 0px;
+}
+
+:is([dir="rtl"] .rtl\:left-4) {
+  left: 1rem;
+}
+
+:is([dir="rtl"] .rtl\:ml-10) {
+  margin-left: 2.5rem;
 }
 
 :is([dir="rtl"] .rtl\:ml-11) {
@@ -2006,12 +2192,24 @@ input[type="number"]::-webkit-outer-spin-button {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+:is([dir="rtl"] .rtl\:pl-5) {
+  padding-left: 1.25rem;
+}
+
 :is([dir="rtl"] .rtl\:pr-\[19px\]) {
   padding-right: 19px;
 }
 
-:is([dir="rtl"] .rtl\:pl-5) {
-  padding-left: 1.25rem;
+:is([dir="rtl"] .rtl\:font-morabbaBold) {
+  font-family: Morabba-Bold;
+}
+
+:is([dir="rtl"] .rtl\:font-morabbaExtraBold) {
+  font-family: Morabba-ExtraBold;
+}
+
+:is([dir="rtl"] .rtl\:font-morabbaRegular) {
+  font-family: Morabba-Regular;
 }
 
 @media (min-width: 640px) {
