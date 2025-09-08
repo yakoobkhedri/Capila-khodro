@@ -21,6 +21,27 @@ var newCars = new Swiper(".newCars", {
     prevEl: '.swiper-button-prev', // دکمه قبلی
   },
 });
+var newCars2 = new Swiper(".newCars2", {
+  slidesPerView: 1,
+  loop: true,
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+},
+  spaceBetween: 24,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  navigation: {
+    nextEl: '.swiper-button-next2', // دکمه بعدی
+    prevEl: '.swiper-button-prev2', // دکمه قبلی
+  },
+});
 // acordion
 
 let acordionBtn = Array.from(document.getElementsByClassName('acordionBtn'));
