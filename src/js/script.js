@@ -42,6 +42,26 @@ var newCars2 = new Swiper(".newCars2", {
     prevEl: '.swiper-button-prev2', // دکمه قبلی
   },
 });
+
+var tashilat = new Swiper(".tashilat", {
+  slidesPerView: 1,
+  loop: true,
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+},
+  spaceBetween: 30,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  },
+});
+
+
 // acordion
 
 let acordionBtn = Array.from(document.getElementsByClassName('acordionBtn'));
