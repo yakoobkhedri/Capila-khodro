@@ -1,16 +1,17 @@
 // swiper
 
 var newCars = new Swiper(".newCars", {
-  slidesPerView: 1.6,
+  slidesPerView: 1.5,
   loop: true,
    autoplay: {
     delay: 3000,
     disableOnInteraction: false, // توقف نشود!
 },
-  spaceBetween: 24,
+  spaceBetween: 10,
   breakpoints: {
       768: {
       slidesPerView: 2,
+      spaceBetween: 24,
     },
     992: {
       slidesPerView: 3,
