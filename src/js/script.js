@@ -1,7 +1,7 @@
 // swiper
 
 var newCars = new Swiper(".newCars", {
-  slidesPerView: 1,
+  slidesPerView: 1.6,
   loop: true,
    autoplay: {
     delay: 3000,
@@ -9,10 +9,13 @@ var newCars = new Swiper(".newCars", {
 },
   spaceBetween: 24,
   breakpoints: {
-    768: {
+      768: {
       slidesPerView: 2,
     },
-    1200: {
+    992: {
+      slidesPerView: 3,
+    },
+    1300: {
       slidesPerView: 4,
     }
   },
