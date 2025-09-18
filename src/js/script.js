@@ -53,24 +53,6 @@ slidesPerView: 1.5,
   },
 });
 
-var tashilat = new Swiper(".tashilat", {
-  slidesPerView: 1,
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false, // توقف نشود!
-  },
-  spaceBetween: 30,
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-    },
-    1200: {
-      slidesPerView: 3,
-    }
-  },
-});
-
 
 // acordion
 

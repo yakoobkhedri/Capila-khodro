@@ -733,8 +733,16 @@ video {
   z-index: 999;
 }
 
+.z-1 {
+  z-index: 1;
+}
+
 .order-none {
   order: 0;
+}
+
+.order-last {
+  order: 9999;
 }
 
 .col-span-12 {
@@ -759,6 +767,10 @@ video {
 
 .col-span-9 {
   grid-column: span 9 / span 9;
+}
+
+.col-span-8 {
+  grid-column: span 8 / span 8;
 }
 
 .m-4 {
@@ -1181,6 +1193,14 @@ video {
   height: 100%;
 }
 
+.h-\[65px\] {
+  height: 65px;
+}
+
+.h-\[47px\] {
+  height: 47px;
+}
+
 .min-h-\[489px\] {
   min-height: 489px;
 }
@@ -1303,6 +1323,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[65px\] {
+  width: 65px;
 }
 
 .max-w-\[1536px\] {
@@ -1464,6 +1488,11 @@ video {
 
 .gap-\[5px\] {
   gap: 5px;
+}
+
+.gap-x-0 {
+  -moz-column-gap: 0px;
+       column-gap: 0px;
 }
 
 .overflow-hidden {
@@ -1933,12 +1962,24 @@ video {
   padding-top: 66px;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-justify {
   text-align: justify;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .font-morabbaRegular {
@@ -3267,6 +3308,11 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-right: 50px;
   }
 
+  .sm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .sm\:-mt-0 {
     margin-top: -0px;
   }
@@ -3301,6 +3347,10 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .sm\:mt-\[71px\] {
     margin-top: 71px;
+  }
+
+  .sm\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .sm\:block {
@@ -3345,6 +3395,10 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .sm\:h-auto {
     height: auto;
+  }
+
+  .sm\:h-\[54px\] {
+    height: 54px;
   }
 
   .sm\:w-20 {
@@ -3552,6 +3606,14 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 100%;
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:fill-\[\#f5f5f5\] {
     fill: #f5f5f5;
   }
@@ -3610,6 +3672,18 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 @media (min-width: 1024px) {
+  .lg\:order-first {
+    order: -9999;
+  }
+
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .lg\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
   .lg\:-mt-\[242px\] {
     margin-top: -242px;
   }
@@ -3658,18 +3732,63 @@ input[type="number"]::-webkit-outer-spin-button {
     gap: 1.5rem;
   }
 
+  .lg\:gap-4 {
+    gap: 1rem;
+  }
+
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .lg\:pb-\[30px\] {
+    padding-bottom: 30px;
+  }
+
+  .lg\:pt-\[22px\] {
+    padding-top: 22px;
   }
 
   .lg\:text-start {
     text-align: start;
   }
 
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .lg\:text-secondary {
     --tw-text-opacity: 1;
     color: rgb(5 11 32 / var(--tw-text-opacity));
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:pl-\[30px\]) {
+    padding-left: 30px;
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:pr-0) {
+    padding-right: 0px;
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:pr-10) {
+    padding-right: 2.5rem;
+  }
+
+  :is([dir="rtl"] .rtl\:lg\:pl-0) {
+    padding-left: 0px;
+  }
+
+  :is([dir="rtl"] .rtl\:lg\:pr-\[30px\]) {
+    padding-right: 30px;
+  }
+
+  :is([dir="rtl"] .rtl\:lg\:pl-10) {
+    padding-left: 2.5rem;
   }
 }
 
@@ -3680,6 +3799,14 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 @media (min-width: 1280px) {
+  .xl\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .xl\:col-span-9 {
+    grid-column: span 9 / span 9;
+  }
+
   .xl\:mx-\[60px\] {
     margin-left: 60px;
     margin-right: 60px;
@@ -3705,6 +3832,10 @@ input[type="number"]::-webkit-outer-spin-button {
     gap: 2rem;
   }
 
+  .xl\:gap-\[30px\] {
+    gap: 30px;
+  }
+
   .xl\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -3717,5 +3848,39 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .xl\:pb-\[29px\] {
     padding-bottom: 29px;
+  }
+
+  :is([dir="ltr"] .ltr\:xl\:pl-\[30px\]) {
+    padding-left: 30px;
+  }
+
+  :is([dir="ltr"] .ltr\:xl\:pr-0) {
+    padding-right: 0px;
+  }
+
+  :is([dir="rtl"] .rtl\:xl\:pl-0) {
+    padding-left: 0px;
+  }
+
+  :is([dir="rtl"] .rtl\:xl\:pr-\[30px\]) {
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .\32xl\:col-span-9 {
+    grid-column: span 9 / span 9;
+  }
+
+  .\32xl\:gap-\[30px\] {
+    gap: 30px;
+  }
+
+  .\32xl\:text-\[28px\] {
+    font-size: 28px;
   }
 }
