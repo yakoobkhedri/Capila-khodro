@@ -1815,17 +1815,21 @@
 
     <section class="sm:mt-16 mt-10">
       <div class="max-w-content mx-auto px-4">
-        <div class="grid grid-cols-12 items-end gap-8 relative p-[30px]">
+        <div class="grid grid-cols-12 items-end gap-y-6 sm:gap-8 relative p-5 xl:p-[30px]">
           <img alt="bg" src="../img/Rectangle 32 (4).png"
-            class="absolute left-0 right-0 bottom-0 w-full h-[454px] ltrReverse">
-          <div class="col-span-3 relative">
-            <img alt="icon" src="../img/icons/Icon (13).svg" class="mx-auto">
-            <p class="rtl:font-morabbaExtraBold text-[28px] ltr:font-MontserratBold text-center text-white mt-[46px]">
-              تماس با ما</p>
+            class="absolute left-0 right-0 bottom-0 w-full h-[454px] ltrReverse hidden lg:block">
+          <img alt="bg" src="../img/Rectangle 176.png"
+            class="absolute inset-0 w-full h-full ltrReverse lg:hidden">
+          <div class="lg:col-span-3 col-span-12 relative">
+            <div class="flex items-center sm:flex-col gap-[14px] sm:gap-[46px]"> 
+              <img alt="icon" src="../img/icons/Icon (13).svg" class="sm:mx-auto w-12 sm:w-auto h-12 sm:h-auto">
+              <p class="rtl:font-morabbaExtraBold text-lg sm:text-[28px] ltr:font-MontserratBold text-center text-white">
+                تماس با ما</p>
+            </div>
             <p class="mt-5 text-white text-center opacity-50 text-sm">
               در مورد خرید، فروش،‌ اجاره و تسهیلات خودرو نیاز به سوال یا مشاوره دارید؟ با ما در تماس باشید
             </p>
-            <a class="bg-[#EEF1FB] mt-[53px] rounded-[14px] py-4 px-5 flex items-center justify-between gap-1.5 w-full">
+            <a class="bg-[#EEF1FB] mt-3 sm:mt-[53px] rounded-[14px] py-3 sm:py-4 px-[14px] sm:px-5 flex items-center justify-between gap-1.5 w-full">
               <p class="opacity-50 text-xs">پشتیبانی و مشاوره ۲۴ ساعته</p>
               <div class="h-[18px] w-[1px] opacity-30 bg-[#000000] flex-shrink-0"></div>
               <div class="flex items-center gap-[2px]">
@@ -1834,19 +1838,19 @@
               </div>
             </a>
           </div>
-          <div class="col-span-9 relative">
-            <form class="bg-white rounded-[30px] py-8 px-11">
+          <div class="lg:col-span-9 col-span-12 relative">
+            <form class="bg-white rounded-[30px] py-6 sm:py-8 px-5 sm:px-11">
               <div class="flex items-center gap-2.5 relative">
-                <div class="w-[30px] h-[30px] bg-primary flex-center rounded-md flex-shrink-0">
-                  <img alt="icon" src="../img/icons/iconoir_info-circle.svg">
+                <div class="w-6 sm:w-[30px] h-6 sm:h-[30px] bg-primary flex-center rounded-md flex-shrink-0">
+                  <img alt="icon" src="../img/icons/iconoir_info-circle.svg" class="w-4 sm:w-auto h-4 sm:h-auto">
                 </div>
-                <p class="text-[21px] text-secondary rtl:font-morabbaRegular ltr:font-MontserratRegular">
+                <p class="sm:text-[21px] text-secondary rtl:font-morabbaRegular ltr:font-MontserratRegular">
                   <span class="rtl:font-morabbaBlack ltr:font-MontserratBold">تماس با</span> کاپیلا خودرو
                 </p>
               </div>
-              <img alt="line" src="../img/Line 5 (3).png" class="w-full mt-7">
-              <div class="grid grid-cols-12 gap-4 mt-7">
-                <div class="col-span-4">
+              <img alt="line" src="../img/Line 5 (3).png" class="w-full mt-3 sm:mt-7">
+              <div class="grid grid-cols-12 gap-3 lg:gap-4 mt-7">
+                <div class="col-span-12 md:col-span-4">
                   <div class="border border-[#b2b2b299] mb-3 relative h-12 px-3 rounded-[14px] flex items-center">
                     <label class="bg-white p-1 px-1.5 absolute text-xs -top-3 rtl:right-3 ltr:left-3 font-bold">نام و
                       نام خانوادگی</label>
@@ -1854,7 +1858,7 @@
                       class="outline-none bg-transparent w-full text-xs">
                   </div>
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-12 md:col-span-4">
                   <div class="border border-[#b2b2b299] mb-3 relative h-12 px-3 rounded-[14px] flex items-center">
                     <label class="bg-white p-1 px-1.5 absolute text-xs -top-3 rtl:right-3 ltr:left-3 font-bold">شماره
                       تماس</label>
@@ -1862,7 +1866,7 @@
                       class="outline-none bg-transparent w-full text-xs">
                   </div>
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-12 md:col-span-4">
                   <div class="border border-[#b2b2b299] mb-3 relative h-12 px-3 rounded-[14px] flex items-center">
                     <label class="bg-white p-1 px-1.5 absolute text-xs -top-3 rtl:right-3 ltr:left-3 font-bold">موضوع
                       پیام</label>
@@ -1879,17 +1883,17 @@
                   </div>
                 </div>
                 <div class="col-span-12">
-                  <div class="flex items-center justify-between gap-2">
+                  <div class="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-2">
                     <div
-                      class="max-w-[273px] w-full border border-[#b2b2b299] relative h-12 px-3 rounded-[14px] flex items-center gap-2">
+                      class="md:max-w-[273px] w-full border border-[#b2b2b299] relative h-12 px-3 rounded-[14px] flex items-center gap-2">
                       <label class="bg-white p-1 px-1.5 absolute text-xs -top-3 rtl:right-3 ltr:left-3 font-bold">کد
                         کپچا</label>
                       <input placeholder="کدکپچا را وارد کنید ..."
                         class="outline-none bg-transparent w-full text-xs flex-grow">
-                      <p class="font-black text-lg flex-shrink-0 text-secondary">۰۹۲۳۵۱</p>
+                      <p class="font-black sm:text-lg flex-shrink-0 text-secondary">۰۹۲۳۵۱</p>
                     </div>
                     <button
-                      class="font-bold text-[13px] border-none rounded-xl bg-secondary hover:bg-primary text-white transition-all py-[17px] px-[112px]">ارسال
+                      class="w-full md:w-auto flex-grow md:flex-grow-0 font-bold text-[13px] border-none rounded-xl bg-secondary hover:bg-primary text-white transition-all py-[17px] md:px-[112px]">ارسال
                       پیام</button>
                   </div>
                 </div>
