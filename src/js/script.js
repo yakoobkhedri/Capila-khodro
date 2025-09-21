@@ -65,3 +65,22 @@ acordionBtn.forEach((item) => {
     item.nextElementSibling.classList.toggle('active');
   })
 });
+
+// persian number
+
+function convertPageNumbersToPersian() {
+    const elements = document.querySelectorAll('body *:not(script):not(style)');
+    
+    elements.forEach(element => {
+        element.childNodes.forEach(node => {
+            if (node.nodeType === 3) { // Text node
+                node.nodeValue = node.nodeValue.replace(/\d/g, (digit) => {
+                    return String.fromCharCode(digit.charCodeAt(0) + 1728);
+                });
+            }
+        });
+    });
+}
+
+// اجرا پس از لود صفحه
+document.addEventListener('DOMContentLoaded', convertPageNumbersToPersian);

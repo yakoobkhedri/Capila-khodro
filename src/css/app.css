@@ -255,6 +255,32 @@ input[type="number"]::-webkit-outer-spin-button {
   text-wrap: nowrap;
 }
 
+/* slide */
+
+.btnSlide.active svg:first-child path{
+  @apply fill-primary;
+}
+.btnSlide.active svg.second{
+  @apply opacity-100;
+}
+.btnSlide.active svg.second path{
+  @apply !fill-white;
+}
+.btnSlide.active p{
+  @apply text-white opacity-100;
+}
+.slideContent{
+  display: none;
+  transition: all .4s;
+  opacity: 0;
+  visibility: hidden;
+}
+.slideContent:first-child,.slideContent.active{
+  display: block;
+  opacity: 100%;
+  visibility: visible;
+}
+
 /* scroll */
 .noscroll {
   scrollbar-width: none;
