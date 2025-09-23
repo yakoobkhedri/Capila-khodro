@@ -71,7 +71,7 @@ var brands = new Swiper(".brands", {
       spaceBetween: 14,
     },
     1200: {
-      slidesPerView: 6,
+      slidesPerView: 5,
     },
     1300: {
       slidesPerView: 7,

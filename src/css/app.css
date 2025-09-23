@@ -446,6 +446,13 @@ input[type="number"]::-webkit-outer-spin-button {
   @apply text-sm text-[#2C2C2C];
 }
 
+/* pagination */
+
+#pagination li a.active{
+  color: #ff5354;
+  opacity: 100%;
+}
+
 /*  */
 .ltrReverse {
   @apply ltr:[transform:rotateY(180deg)];
