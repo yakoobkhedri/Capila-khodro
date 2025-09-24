@@ -54,14 +54,17 @@ slidesPerView: 1.5,
 });
 
 var brands = new Swiper(".brands", {
-  slidesPerView: 3,
-  loop: true,
+  slidesPerView: 2,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false, // توقف نشود!
   },
   spaceBetween: 10,
   breakpoints: {
+        576: {
+      slidesPerView: 3,
+      spaceBetween: 14,
+    },
        768: {
       slidesPerView: 4,
       spaceBetween: 14,
