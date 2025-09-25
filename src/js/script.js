@@ -82,6 +82,32 @@ var brands = new Swiper(".brands", {
   },
 });
 
+var brands2 = new Swiper(".brands2", {
+  slidesPerView: 2,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+  },
+    spaceBetween: 10,
+  breakpoints: {
+        576: {
+      slidesPerView: 4,
+      spaceBetween: 22,
+    },
+       768: {
+      slidesPerView: 5,
+    },
+    992: {
+      slidesPerView: 7,
+    },
+    1200: {
+      slidesPerView: 9,
+    },
+    1300: {
+      slidesPerView: 10,
+    }
+  },
+});
 
 // acordion
 
