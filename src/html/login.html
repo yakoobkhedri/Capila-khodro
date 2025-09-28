@@ -14,13 +14,63 @@
 
   <main>
 
-    <section>
+    <section class="md:my-16 my-5">
       <div class="max-w-content mx-auto px-4">
-       
+        <div class="flex flex-col lg:flex-row gap-7 items-end relative p-6 px-4 sm:px-6 rounded-xl bg-white lg:bg-transparent">
+          <img alt="bg" src="../img/Rectangle 32 (10).png" class="absolute w-full h-full hidden lg:block left-0 right-0 bottom-0">
+          <div class="lg:w-[536px] w-full relative">
+            <form id="loginForm">
+              <div class="flex items-center gap-2 relative rtl:sm:right-[56px] ltr:sm:left-[56px]">
+                <div class="w-6 h-6 bg-secondary flex-center rounded-md flex-shrink-0">
+                  <img alt="icon" src="../img/icons/Vector (3).svg" class="w-4 h-4">
+                </div>
+                <p class="text-xs text-secondary rtl:font-morabbaRegular ltr:font-MontserratRegular">
+                  <span class="rtl:font-morabbaBlack ltr:font-MontserratBold">ورود به</span> حساب کاربری
+                </p>
+              </div>
+              <img alt="img" src="../img/Image (5).png" class="mx-auto mt-[38px]">
+              <div class="mt-9">
+                <div class="border border-[#b2b2b299] relative h-[55px] px-3 rounded-[15px] flex items-center">
+                  <label class="bg-white p-1 px-1.5 absolute text-xs -top-3 rtl:right-3 ltr:left-3 font-bold flex items-center justify-center gap-2">
+                    <img alt="icon" src="../img/icons/iconoir_hashtag.svg" class="flex-shrink-0">
+                    <span>کد تایید</span>
+                  </label>
+                  <div dir="ltr" class="otpContainer flex items-center justify-between gap-4 md:gap-11 px-3 md:px-[72px]">
+                    <input type="number" maxlength="1" class="bg-transparent font-bold otpInput w-full outline-none pb-2 text-center border-b border-[#000000]">
+                    <input type="number" maxlength="1" disabled="" class="bg-transparent font-bold otpInput w-full outline-none pb-2 text-center border-b border-[#000000]">
+                    <input type="number" maxlength="1" disabled="" class="bg-transparent font-bold otpInput w-full outline-none pb-2 text-center border-b border-[#000000]">
+                    <input type="number" maxlength="1" disabled="" class="bg-transparent font-bold otpInput w-full outline-none pb-2 text-center border-b border-[#000000]">
+                    <input type="number" maxlength="1" disabled="" class="bg-transparent font-bold otpInput w-full outline-none pb-2 text-center border-b border-[#000000]">
+                  </div>
+                  <input type="hidden" id="otpHiddenInput">
+                </div>
+                <div class="flex items-center justify-between gap-2 mt-[18px] flex-wrap">
+                  <p class="text-secondary text-xs sm:text-sm">کد تایید ارسال شده به شماره <span class="font-bold">۶۷۸۹ ۳۴۵ ۰۹۱۲</span> را ارسال کنید</p>
+                  <p class= "text-xs sm:text-sm text-secondary opacity-50">ارسال مجدد در ۰۱:۳۶ ثانیه</p>
+                </div>
+                  <div class="border border-[#b2b2b299] relative h-[55px] px-3 mt-[18px] rounded-[15px] flex items-center">
+                  <label class="bg-white p-1 px-1.5 absolute text-xs -top-3 rtl:right-3 ltr:left-3 font-bold flex items-center justify-center gap-2">
+                    <img alt="icon" src="../img/icons/iconoir_phone.svg" class="flex-shrink-0">
+                    <span>شماره موبایل</span>
+                  </label>
+                  <div class="px-4">
+                    <input placeholder="شماره موبایل خود را وارد کنید" class="bg-transparent w-full outline-none text-sm">
+                  </div>
+                </div>
+                <button type="submit" class="bg-secondary transition-all hover:bg-primary text-white h-[58px] mt-[18px] w-full rounded-[15px] font-bold text-m flex-center">ارسال کد تایید</button>
+              </div>
+            </form>
+          </div>
+          <div class="flex-grow relative w-full lg:w-auto hidden md:block">
+            <img alt="img" src="../img/Container.png" class="w-full rounded-[15px]">
+          </div>
+        </div>
       </div>
     </section>
 
   </main>
+
+    <script src="../js/otp.js"></script>
 
 </body>
 
