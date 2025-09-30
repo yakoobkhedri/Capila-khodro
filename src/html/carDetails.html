@@ -11,6 +11,108 @@
 
 <body class="w-full max-w-[1536px] mx-auto">
 
+  <!-- details modal-->
+  <div class="modal">
+    <div style="visibility: hidden; opacity: 0;" data-modal-class="details-modal"
+      class="flex modal-container bg-black/60 justify-center backdrop-blur-sm fixed inset-0 items-center overflow-auto px-4 sm:px-7 transition-all z-[100]">
+      <div class="modal-content bg-white rounded-[30px] w-full max-w-[623px]  p-5 relative">
+        <div class="flex items-center gap-2.5 relative">
+          <div class="w-4 sm:w-6 h-4 sm:h-6 bg-secondary flex-center rounded sm:rounded-md flex-shrink-0">
+            <img alt="icon" src="../img/icons/iconoir_car (3).svg" class="w-2.5 sm:w-auto h-2.5 sm:h-auto">
+          </div>
+          <p class="sm:text-[17px] text-secondary rtl:font-morabbaBlack ltr:font-MontserratBold">
+            بدنه + لاستیک ها
+          </p>
+        </div>
+        <img alt="line" src="../img/Line 5 (3).png" class="w-full mt-5 sm:mt-6 ltrReverse">
+        <div class="mt-3 grid grid-cols-2 gap-4">
+          <div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>سلامت شاسی جلو</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>سلامت سقف خودرو</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>سلامت شاسی عقب</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>سلامت کف صندوق عقب</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>سلامت ستون جلو سمت راننده</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>سلامت ستون جلو سمت شاگرد</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>سلامت ستون وسط سمت راننده</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>سلامت ستون وسط سمت شاگرد</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>سلامت ستون عقب سمت راننده</p>
+             </div>
+          </div>
+             <div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>سلامت ستون عقب سمت شاگرد</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_nav-arrow-down.svg" class="flex-shrink-0">
+               <p>سلامت ناودانی سمت شاگرد</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>سلامت ناودانی سمت راننده</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_nav-arrow-down.svg" class="flex-shrink-0">
+               <p>دارای لاستیک زاپاس</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>لاستیک زاپاس : 90-100</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>لاستیک جلو شاگرد : 90-100</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>لاستیک عقب شاگرد : 90-100</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_nav-arrow-down.svg" class="flex-shrink-0">
+               <p>لاستیک عقب راننده : 90-100</p>
+             </div>
+             <div class="flex items-center gap-2 mb-3">
+               <img alt="icon" src="../img/icons/iconoir_check.svg" class="flex-shrink-0">
+               <p>لاستیک جلو راننده : 90-100</p>
+             </div>
+          </div>
+        </div>
+        <button class="p-2 absolute close-button group left-4 ltr:left-auto ltr:right-4 top-4">
+          <svg class="w-4" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="group-hover:stroke-red-600 transition" d="M16 2L2 16M2 2L16 16" stroke="black"
+              stroke-width="2.15385" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <header class="relative">
     <svg class="absolute inset-x-0 top-[-3px] mx-auto" width="54" height="24" viewBox="0 0 74 24" fill="none"
       xmlns="http://www.w3.org/2000/svg">
@@ -170,16 +272,16 @@
 
     <section class="sm:mt-16 mt-10">
       <div class="max-w-content mx-auto px-4">
-        <div class="relative p-6">
-          <img alt="bg" src="../img/Rectangle 32 (11).png" class="absolute w-full h-full inset-0">
+        <div class="relative p-4 sm:p-6 bg-secondary lg:bg-transparent rounded-[15px]">
+          <img alt="bg" src="../img/Rectangle 32 (11).png" class="absolute w-full h-full inset-0 hidden lg:block">
           <div class="grid grid-cols-12 items-end gap-3 relative">
-            <div class="col-span-8">
-              <div class="flex items-center justify-between gap-2">
+            <div class="xl:col-span-8 col-span-12">
+              <div class="flex items-center justify-between gap-2 flex-wrap">
                 <div class="flex items-center gap-2 font-extrabold text-white text-[29px]">
                   <img alt="icon" src="../img/icons/Icon (25).svg" class="flex-shrink-0">
                   <p>تارا پلاس V3</p>
                 </div>
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 flex-wrap">
                   <a
                     class="flex items-center justify-center gap-[5px] text-secondary font-bold group rounded-[15px] h-[60px] text-sm bg-white p-[22px] hover:bg-primary hover:text-white">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -209,32 +311,32 @@
                   </div>
                 </div>
               </div>
-              <img alt="line" src="../img/Line 5 (4).png" class="w-full mt-6 ltrReverse">
-              <div class="flex items-center gap-6 mt-4">
-                <div class="bg-white p-6 rounded-[15px] grid grid-cols-2 gap-[52px] flex-grow">
+              <img alt="line" src="../img/Line 5 (4).png" class="w-full mt-6 ltrReverse hidden sm:block">
+              <div class="flex items-center flex-col lg:flex-row gap-6 mt-4">
+                <div class="bg-white p-4 sm:p-6 w-full rounded-[15px] grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-[52px] flex-grow">
                   <div>
-                    <div class="flex items-center justify-between gap-2 pb-6 border-b border-[#00000010] mb-6">
+                    <div class="text-sm sm:text-base flex items-center justify-between gap-2 pb-4 sm:pb-6 border-b border-[#00000010] mb-4 sm:mb-6">
                       <div class="flex items-center gap-1.5 ">
                         <img alt="icon" src="../img/icons/iconoir_car (6).svg" class="flex-shrink-0">
                         <p class="text-secondary opacity-50">کد خودرو</p>
                       </div>
                       <p class="text-secondary font-bold">۶۸۴۱۳۱۴۰۳</p>
                     </div>
-                    <div class="flex items-center justify-between gap-2 pb-6 border-b border-[#00000010] mb-6">
+                    <div class="text-sm sm:text-base flex items-center justify-between gap-2 pb-4 sm:pb-6 border-b border-[#00000010] mb-4 sm:mb-6">
                       <div class="flex items-center gap-1.5 ">
                         <img alt="icon" src="../img/icons/iconoir_calendar (2).svg" class="flex-shrink-0">
                         <p class="text-secondary opacity-50">سال تولید خودرو</p>
                       </div>
                       <p class="text-secondary font-bold">۱۴۰۳</p>
                     </div>
-                    <div class="flex items-center justify-between gap-2 pb-6 border-b border-[#00000010] mb-6">
+                    <div class="text-sm sm:text-base flex items-center justify-between gap-2 pb-4 sm:pb-6 border-b border-[#00000010] mb-4 sm:mb-6">
                       <div class="flex items-center gap-1.5 ">
                         <img alt="icon" src="../img/icons/iconoir_dashboard-speed.svg" class="flex-shrink-0">
                         <p class="text-secondary opacity-50">کیلومتر کارکرد</p>
                       </div>
                       <p class="text-secondary font-bold">صفر کیلومتر</p>
                     </div>
-                    <div class="flex items-center justify-between gap-2">
+                    <div class="text-sm sm:text-base flex items-center justify-between gap-2">
                       <div class="flex items-center gap-1.5 ">
                         <img alt="icon" src="../img/icons/iconoir_car (7).svg" class="flex-shrink-0">
                         <p class="text-secondary opacity-50">مدل خودرو</p>
@@ -242,7 +344,7 @@
                       <p class="text-secondary font-bold">Tara V3</p>
                     </div>
                   </div>
-                  <div class="grid grid-cols-2 gap-6">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                     <div class="bg-[#EEF1FB] rounded-[10px] p-2">
                       <div class="flex items-center justify-center gap-1.5">
                         <img alt="icon" src="../img/icons/iconoir_gas-tank-droplet (2).svg">
@@ -287,77 +389,165 @@
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="w-[88px] h-[88px] bg-[#ffffff46] mb-3 rounded-[15px] flex items-center justify-center">
-                    <img alt="img" src="../img/peugeot-206-rent 1 (5).png">
-                  </div>
-                  <div class="w-[88px] h-[88px] bg-[#ffffff46] mb-3 rounded-[15px] flex items-center justify-center">
-                    <img alt="img" src="../img/peugeot-206-rent 1 (5).png">
-                  </div>
-                  <div class="w-[88px] h-[88px] bg-[#ffffff46] rounded-[15px] flex items-center justify-center">
-                    <img alt="img" src="../img/peugeot-206-rent 1 (5).png">
+                <div class="w-full lg:w-auto flex-grow lg:flex-grow-0">
+                  <div class="swiper smallImg lg:h-[292px] w-full">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div
+                          class="lg:w-[88px] h-[88px] bg-[#ffffff46] mb-3 rounded-[15px] flex items-center justify-center">
+                          <img alt="img" src="../img/peugeot-206-rent 1 (5).png">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="lg:w-[88px] h-[88px] bg-[#ffffff46] mb-3 rounded-[15px] flex items-center justify-center">
+                          <img alt="img" src="../img/peugeot-206-rent 1 (5).png">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="lg:w-[88px] h-[88px] bg-[#ffffff46] mb-3 rounded-[15px] flex items-center justify-center">
+                          <img alt="img" src="../img/peugeot-206-rent 1 (5).png">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="lg:w-[88px] h-[88px] bg-[#ffffff46] mb-3 rounded-[15px] flex items-center justify-center">
+                          <img alt="img" src="../img/peugeot-206-rent 1 (5).png">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="lg:w-[88px] h-[88px] bg-[#ffffff46] mb-3 rounded-[15px] flex items-center justify-center">
+                          <img alt="img" src="../img/peugeot-206-rent 1 (5).png">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="lg:w-[88px] h-[88px] bg-[#ffffff46] mb-3 rounded-[15px] flex items-center justify-center">
+                          <img alt="img" src="../img/peugeot-206-rent 1 (5).png">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="lg:w-[88px] h-[88px] bg-[#ffffff46] mb-3 rounded-[15px] flex items-center justify-center">
+                          <img alt="img" src="../img/peugeot-206-rent 1 (5).png">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="lg:w-[88px] h-[88px] bg-[#ffffff46] mb-3 rounded-[15px] flex items-center justify-center">
+                          <img alt="img" src="../img/peugeot-206-rent 1 (5).png">
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-span-4">
+            <div class="xl:col-span-4 col-span-12">
               <div
-                class="bg-white relative rounded-t-[30px] rounded-b-[15px] px-12 py-[130px] flex items-center justify-center">
-                <img alt="img" src="../img/peugeot-206-rent 1 (6).png">
-                <svg class="absolute cursor-pointer my-auto top-0 bottom-0 rtl:right-6 ltr:left-6" width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                class="bg-white relative rounded-t-[30px] rounded-b-[15px] px-10 sm:px-5 py-[130px] flex items-center justify-center">
+                <div class="swiper carDetails">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img alt="img" src="../img/peugeot-206-rent 1 (6).png" class="mx-auto">
+                    </div>
+                    <div class="swiper-slide">
+                      <img alt="img" src="../img/peugeot-206-rent 1 (6).png" class="mx-auto">
+                    </div>
+                    <div class="swiper-slide">
+                      <img alt="img" src="../img/peugeot-206-rent 1 (6).png" class="mx-auto">
+                    </div>
+                    <div class="swiper-slide">
+                      <img alt="img" src="../img/peugeot-206-rent 1 (6).png" class="mx-auto">
+                    </div>
+                    <div class="swiper-slide">
+                      <img alt="img" src="../img/peugeot-206-rent 1 (6).png" class="mx-auto">
+                    </div>
+                    <div class="swiper-slide">
+                      <img alt="img" src="../img/peugeot-206-rent 1 (6).png" class="mx-auto">
+                    </div>
+                    <div class="swiper-slide">
+                      <img alt="img" src="../img/peugeot-206-rent 1 (6).png" class="mx-auto">
+                    </div>
+                    <div class="swiper-slide">
+                      <img alt="img" src="../img/peugeot-206-rent 1 (6).png" class="mx-auto">
+                    </div>
+                  </div>
+                </div>
+                <svg
+                  class="absolute z-10 swiper-button-next3 cursor-pointer my-auto top-0 bottom-0 rtl:right-3 rtl:sm:right-6 ltr:left-3 ltr:sm:left-6"
+                  width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.5 1.00006L10.5 10.0001L1.5 19.0001" stroke="#050B20" stroke-width="1.82278"
                     stroke-linecap="round" stroke-linejoin="round" />
                   <script xmlns="" />
                 </svg>
-                <svg class="absolute cursor-pointer my-auto top-0 bottom-0 rtl:left-6 ltr:right-6" width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  class="absolute z-10 swiper-button-prev3 cursor-pointer my-auto top-0 bottom-0 rtl:left-3 rtl:sm:left-6 ltr:right-3 ltr:sm:right-6"
+                  width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.5 1.00006L1.5 10.0001L10.5 19.0001" stroke="#050B20" stroke-width="1.82278"
                     stroke-linecap="round" stroke-linejoin="round" />
                   <script xmlns="" />
                 </svg>
                 <div class="flex items-center gap-1 absolute bottom-[18px] rtl:right-8 ltr:left-8">
                   <img alt="img" src="../img/Group.png" class="opacity-50">
-                  <p class="text-secondary opacity-50 text-sm">12</p>
+                  <p id="slideNumber" class="text-secondary opacity-50 text-sm">4</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="mt-[22px] relative">
-            <div class="bg-primary rounded-[15px] rtl:pr-[18px] ltr:pl-[18px] p-3 flex items-center justify-between gap-2">
-               <div class="flex items-center gap-9">
-                 <div class="flex items-center gap-[94px]">
-                    <div class="flex items-center gap-1.5 text-white">
-                      <img alt="icon" src="../img/icons/Vector (10).svg" class="flex-shrink-0">
-                       <p>کارشناسی فروش</p>
-                    </div>
-                    <p class="font-bold text-white">خانم سلیمانی</p>
-                 </div>
-                 <div class="bg-white flex-shrink-0 w-[1px] h-7 opacity-50"></div>
-                  <div class="flex items-center gap-[94px]">
-                    <div class="flex items-center gap-1.5 text-white">
-                      <img alt="icon" src="../img/icons/Vector (11).svg" class="flex-shrink-0">
-                       <p>شماره تماس</p>
-                    </div>
-                    <p class="font-bold text-white">۰۹۱۲ ۳۴۵ ۶۷۸۹</p>
-                 </div>
-               </div>
-               <div class="flex items-center gap-3">
-                 <p class="text-white text-sm">
+            <div
+              class="bg-primary flex-col md:flex-row flex-wrap rounded-[15px] rtl:pr-[18px] ltr:pl-[18px] p-3 flex items-center justify-between gap-5">
+              <div class="flex items-center gap-5 md:gap-9 flex-wrap w-full md:w-auto">
+                <div class="flex items-center justify-between sm:justify-start text-sm sm:text-base w-full md:w-auto gap-2 sm:gap-[94px] border-b border-[#ffffff4d] md:border-transparent pb-5 md:pb-0">
+                  <div class="flex items-center gap-1.5 text-white">
+                    <img alt="icon" src="../img/icons/Vector (10).svg" class="flex-shrink-0">
+                    <p>کارشناسی فروش</p>
+                  </div>
+                  <p class="font-bold text-white">خانم سلیمانی</p>
+                </div>
+                <div class="bg-white flex-shrink-0 w-[1px] h-7 opacity-50 hidden md:block"></div>
+                <div class="flex items-center justify-between sm:justify-start text-sm sm:text-base w-full md:w-auto gap-2 sm:gap-[94px]">
+                  <div class="flex items-center gap-1.5 text-white">
+                    <img alt="icon" src="../img/icons/Vector (11).svg" class="flex-shrink-0">
+                    <p>شماره تماس</p>
+                  </div>
+                  <p class="font-bold text-white">۰۹۱۲ ۳۴۵ ۶۷۸۹</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 w-full md:w-auto flex-col sm:flex-row">
+                <p class="text-white text-sm">
                   بــا قــوانـیـن و مــقــررات شـهر<br> خودرو کاپیلا موافق هستم.
-                 </p>
-                 <a class="bg-white hover:bg-secondary h-12 hover:text-white group text-secondary text-lg rtl:font-morabbaMedium ltr:font-MontserratBold rounded-[15px] flex items-center justify-center gap-1.5 py-5 px-10">
+                </p>
+                <a
+                  class="bg-white hover:bg-secondary h-12 hover:text-white group text-secondary text-lg rtl:font-morabbaMedium ltr:font-MontserratBold rounded-[15px] flex items-center justify-center w-full sm:w-auto gap-1.5 py-5 px-4 sm:px-10">
                   <p>درخواست خرید</p>
-                  <svg class="ltrReverse" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path class="transition-all group-hover:stroke-white" d="M14.5 8.54752H2.5M2.5 8.54752L8.16667 2.84717M2.5 8.54752L8.16667 14.2479" stroke="#FF5354" stroke-width="1.03033" stroke-linecap="round" stroke-linejoin="round"/>
-  <script xmlns=""/></svg>
-                 </a>
-               </div>
+                  <svg class="ltrReverse" width="17" height="17" viewBox="0 0 17 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="transition-all group-hover:stroke-white"
+                      d="M14.5 8.54752H2.5M2.5 8.54752L8.16667 2.84717M2.5 8.54752L8.16667 14.2479" stroke="#FF5354"
+                      stroke-width="1.03033" stroke-linecap="round" stroke-linejoin="round" />
+                    <script xmlns="" />
+                  </svg>
+                </a>
+              </div>
             </div>
             <div class="mt-6 bg-white rounded-[15px] text-justify p-6">
               <p class="opacity-60 text-sm text-secondary leading-[180%]">
-                 خودروی تارا V3 نسخه به‌روزشده و مجهزتر از تارا دستی است که توسط ایران‌خودرو عرضه می‌شود. این خودرو بر پایه پلتفرم پژو ۳۰۱ ساخته شده و به یک موتور ۱.۶ لیتری TU5 پلاس با توان حدود ۱۱۳ اسب بخار و گیربکس دستی ۶ سرعته مجهز است. مصرف سوخت ترکیبی آن حدود ۷ لیتر در هر ۱۰۰ کیلومتر بوده و حداکثر سرعتش به ۱۹۰ کیلومتر بر ساعت می‌رسد. تارا V3 نسبت به نسخه‌های پایه امکانات بیشتری دارد که از مهم‌ترین آن‌ها می‌توان به سانروف، آنتن کوسه‌ای، استارت دکمه‌ای (کی‌لس استارتر)، دوربین دنده عقب، سنسور باران و نور، آینه‌های تاشونده برقی، زیرآرنجی جلو و عقب و چراغ خوش‌آمدگویی اشاره کرد. طراحی چراغ‌های عقب نیز تغییر کرده تا نمای مدرن‌تری ایجاد کند. همچنین استفاده از گیربکس با رابط کابلی و کلاچ هیدرولیکی باعث شده تعویض دنده نرم‌تر و لذت رانندگی بیشتر شود. در مجموع، تارا V3 یک سدان خانوادگی با امکانات رفاهی مناسب و بهبودهای فنی قابل توجه است که گزینه‌ای اقتصادی و به‌روز در بازار خودرو ایران به شمار می‌آید.
+                خودروی تارا V3 نسخه به‌روزشده و مجهزتر از تارا دستی است که توسط ایران‌خودرو عرضه می‌شود. این خودرو بر
+                پایه پلتفرم پژو ۳۰۱ ساخته شده و به یک موتور ۱.۶ لیتری TU5 پلاس با توان حدود ۱۱۳ اسب بخار و گیربکس دستی ۶
+                سرعته مجهز است. مصرف سوخت ترکیبی آن حدود ۷ لیتر در هر ۱۰۰ کیلومتر بوده و حداکثر سرعتش به ۱۹۰ کیلومتر بر
+                ساعت می‌رسد. تارا V3 نسبت به نسخه‌های پایه امکانات بیشتری دارد که از مهم‌ترین آن‌ها می‌توان به سانروف،
+                آنتن کوسه‌ای، استارت دکمه‌ای (کی‌لس استارتر)، دوربین دنده عقب، سنسور باران و نور، آینه‌های تاشونده برقی،
+                زیرآرنجی جلو و عقب و چراغ خوش‌آمدگویی اشاره کرد. طراحی چراغ‌های عقب نیز تغییر کرده تا نمای مدرن‌تری
+                ایجاد کند. همچنین استفاده از گیربکس با رابط کابلی و کلاچ هیدرولیکی باعث شده تعویض دنده نرم‌تر و لذت
+                رانندگی بیشتر شود. در مجموع، تارا V3 یک سدان خانوادگی با امکانات رفاهی مناسب و بهبودهای فنی قابل توجه
+                است که گزینه‌ای اقتصادی و به‌روز در بازار خودرو ایران به شمار می‌آید.
               </p>
             </div>
-            <div class="mt-6 grid grid-cols-4 gap-6">
+            <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               <div class="bg-white rounded-[15px] p-4 min-h-[102px]">
                 <p class="text-secondary opacity-50 text-sm">موتور:</p>
                 <p class="mt-1.5 text-sm text-secondary font-bold">
@@ -368,45 +558,183 @@
                 <p class="text-secondary opacity-50 text-sm">جعبه دنده:</p>
                 <p class="mt-1.5 text-sm text-secondary font-bold">
                   دستی<br>
-  ۶ سرعته MT6
+                  ۶ سرعته MT6
                 </p>
               </div>
               <div class="bg-white rounded-[15px] p-4 min-h-[102px]">
                 <p class="text-secondary opacity-50 text-sm">سرعت و شتاب:</p>
                 <p class="mt-1.5 text-sm text-secondary font-bold">
-                 حداکثر ۱۹۰ کیلومتر/ساعت، شتاب حدود ۱۲.۵ ثانیه
+                  حداکثر ۱۹۰ کیلومتر/ساعت، شتاب حدود ۱۲.۵ ثانیه
                 </p>
               </div>
               <div class="bg-white rounded-[15px] p-4 min-h-[102px]">
                 <p class="text-secondary opacity-50 text-sm">مصرف سوخت:</p>
                 <p class="mt-1.5 text-sm text-secondary font-bold">
-                میانگین ۷ لیتر<br>
-  در هر ۱۰۰ کیلومتر
+                  میانگین ۷ لیتر<br>
+                  در هر ۱۰۰ کیلومتر
                 </p>
               </div>
               <div class="bg-white rounded-[15px] p-4 min-h-[102px]">
                 <p class="text-secondary opacity-50 text-sm">امکانات رفاهی:</p>
                 <p class="mt-1.5 text-sm text-secondary font-bold">
-                 سانروف، کی‌لس استارتر، دوربین عقب، سنسور نور و باران، آینه برقی و…
+                  سانروف، کی‌لس استارتر، دوربین عقب، سنسور نور و باران، آینه برقی و…
                 </p>
               </div>
               <div class="bg-white rounded-[15px] p-4 min-h-[102px]">
                 <p class="text-secondary opacity-50 text-sm">بهبود رانندگی:</p>
                 <p class="mt-1.5 text-sm text-secondary font-bold">
-                گیربکس روان‌تر، کلاچ هیدرولیکی، فرمان‌پذیری بهتر
+                  گیربکس روان‌تر، کلاچ هیدرولیکی، فرمان‌پذیری بهتر
                 </p>
               </div>
               <div class="bg-white rounded-[15px] p-4 min-h-[102px]">
                 <p class="text-secondary opacity-50 text-sm">طراحی ظاهری:</p>
                 <p class="mt-1.5 text-sm text-secondary font-bold">
-                 چراغ عقب بازطراحی‌شده، آنتن کوسه‌ای، جلوه اسپرت‌تر
+                  چراغ عقب بازطراحی‌شده، آنتن کوسه‌ای، جلوه اسپرت‌تر
                 </p>
               </div>
               <div class="bg-white rounded-[15px] p-4 min-h-[102px]">
                 <p class="text-secondary opacity-50 text-sm">ایمنی:</p>
                 <p class="mt-1.5 text-sm text-secondary font-bold">
-                 وجود ایربگ‌های راننده و سرنشین، سیستم ترمز ABS و EBD، کنترل پایداری
+                  وجود ایربگ‌های راننده و سرنشین، سیستم ترمز ABS و EBD، کنترل پایداری
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-20">
+      <div class="max-w-content mx-auto px-4">
+        <div class="p-6 relative">
+          <img alt="bg" src="../img/Rectangle 27.png" class="absolute inset-0 w-full h-full ltrReverse hidden md:block">
+          <img alt="bg" src="../img/Rectangle 27 (2).png" class="absolute inset-0 w-full h-full ltrReverse md:hidden">
+          <div class="relative rtl:ml-4 ltr:mr-4">
+            <div
+              class="rounded-xl h-[45px] sm:h-[71px] rtl:pl-6 ltr:pr-6 sm:px-4 px-3 flex items-center gap-[5px] sm:gap-2 relative">
+              <img alt="bg" src="../img/Rectangle 28.png"
+                class="absolute w-full h-full inset-0 ltrReverse hidden md:block">
+              <img alt="bg" src="../img/Rectangle 28 (2).png"
+                class="absolute w-full h-full inset-0 ltrReverse md:hidden">
+              <div
+                class="sm:w-6 w-[15px] sm:h-6 h-[15px] bg-secondary flex-center rounded-md flex-shrink-0 relative -top-1 sm:-top-2">
+                <img alt="icon" src="../img/icons/iconoir_car (3).svg" class="w-2.5 sm:w-auto">
+              </div>
+              <p
+                class="text-[13px] sm:text-[17px] text-secondary rtl:font-morabbaRegular ltr:font-MontserratRegular relative -top-1 sm:-top-2">
+                <span class="rtl:font-morabbaBlack ltr:font-MontserratBold">جزئیات کارشناسی</span> خودرو
+              </p>
+              <a
+                class="rtl:mr-auto ltr:ml-auto -top-1 sm:-top-2 text-[17px] text-[#000000] rtl:font-morabbaMedium ltr:font-MontserratRegular relative">دانلود
+                فایل کارشناسی</a>
+            </div>
+          </div>
+          <div class="mt-4 grid grid-cols-12 gap-6 items-end relative">
+            <div class="col-span-4">
+              <div class="px-4">
+                <img alt="img" src="../img/Car.png" class="mx-auto w-[336px]">
+              </div>
+              <div
+                class="rounded-3xl flex-center mt-6 bg-thirdry p-2 h-11 gap-2.5 font-bold text-[17px] text-secondary">
+                <div class="bg-primary w-2.5 h-2.5 rounded-full"></div>
+                <p>نقاط رنگ شده</p>
+              </div>
+              <div class="mt-6">
+                <div class="flex items-center justify-between gap-2">
+                  <p class="font-bold text-secondary">تاریخ کارشناسی:</p>
+                  <p class="text-secondary opacity-50 text-sm">۱۱ شهریور ۱۴۰۴</p>
+                </div>
+                <div class="flex items-center justify-between gap-2 mt-[18px]">
+                  <p class="font-bold text-secondary">نمره کارشناسی:</p>
+                  <div class="flex items-center gap-[5px] text-secondary font-bold">
+                    <p>۴.۷</p>
+                    <img alt="icon" src="../img/icons/iconoir_star.svg" class="flex-shrink-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-8">
+              <div>
+                <div class="bg-[#EEF1FB] rounded-[15px] h-16 py-4 px-5 flex items-center justify-between gap-2 mb-6">
+                  <div class="flex items-center gap-1.5 text-secondary">
+                    <p class="font-bold">بدنه + لاستیک</p>
+                    <p class="opacity-50 text-sm">۱۸ مورد تایید شده</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="rounded-[15px] py-[5px] px-[10px] flex items-center justify-center gap-1 bg-thirdry text-secondary font-bold">
+                      <p>5.0</p>
+                      <img alt="icon" src="../img/icons/iconoir_star.svg" class="flex-shrink-0">
+                    </div>
+                    <a class="w-8 h-8 bg-secondary flex-center rounded-full details-modal">
+                      <img alt="icon" src="../img/icons/Vector (12).svg">
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-[#EEF1FB] rounded-[15px] h-16 py-4 px-5 flex items-center justify-between gap-2 mb-6">
+                  <div class="flex items-center gap-1.5 text-secondary">
+                    <p class="font-bold">موتور</p>
+                    <p class="opacity-50 text-sm">۲۱ مورد تایید شده</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="rounded-[15px] py-[5px] px-[10px] flex items-center justify-center gap-1 bg-thirdry text-secondary font-bold">
+                      <p>3.8</p>
+                      <img alt="icon" src="../img/icons/iconoir_star.svg" class="flex-shrink-0">
+                    </div>
+                    <a class="w-8 h-8 bg-secondary flex-center rounded-full details-modal">
+                      <img alt="icon" src="../img/icons/Vector (12).svg">
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-[#EEF1FB] rounded-[15px] h-16 py-4 px-5 flex items-center justify-between gap-2 mb-6">
+                  <div class="flex items-center gap-1.5 text-secondary">
+                    <p class="font-bold">سیستم برقی + داخلی</p>
+                    <p class="opacity-50 text-sm">۲۵ مورد تایید شده</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="rounded-[15px] py-[5px] px-[10px] flex items-center justify-center gap-1 bg-thirdry text-secondary font-bold">
+                      <p>4.1</p>
+                      <img alt="icon" src="../img/icons/iconoir_star.svg" class="flex-shrink-0">
+                    </div>
+                    <a class="w-8 h-8 bg-secondary flex-center rounded-full details-modal">
+                      <img alt="icon" src="../img/icons/Vector (12).svg">
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-[#EEF1FB] rounded-[15px] h-16 py-4 px-5 flex items-center justify-between gap-2 mb-6">
+                  <div class="flex items-center gap-1.5 text-secondary">
+                    <p class="font-bold">سیستم تعلیق</p>
+                    <p class="opacity-50 text-sm">۱۱ مورد تایید شده</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="rounded-[15px] py-[5px] px-[10px] flex items-center justify-center gap-1 bg-thirdry text-secondary font-bold">
+                      <p>4.7</p>
+                      <img alt="icon" src="../img/icons/iconoir_star.svg" class="flex-shrink-0">
+                    </div>
+                    <a class="w-8 h-8 bg-secondary flex-center rounded-full details-modal">
+                      <img alt="icon" src="../img/icons/Vector (12).svg">
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-[#EEF1FB] rounded-[15px] h-16 py-4 px-5 flex items-center justify-between gap-2">
+                  <div class="flex items-center gap-1.5 text-secondary">
+                    <p class="font-bold">تهویه مطبوع</p>
+                    <p class="opacity-50 text-sm">۵ مورد تایید شده</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="rounded-[15px] py-[5px] px-[10px] flex items-center justify-center gap-1 bg-thirdry text-secondary font-bold">
+                      <p>۴.۹</p>
+                      <img alt="icon" src="../img/icons/iconoir_star.svg" class="flex-shrink-0">
+                    </div>
+                    <a class="w-8 h-8 bg-secondary flex-center rounded-full details-modal">
+                      <img alt="icon" src="../img/icons/Vector (12).svg">
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -453,6 +453,12 @@ input[type="number"]::-webkit-outer-spin-button {
   opacity: 100%;
 }
 
+/* swiper */
+
+.smallImg .swiper-slide-active div{
+  background-color: white;
+}
+
 /*  */
 .ltrReverse {
   @apply ltr:[transform:rotateY(180deg)];
