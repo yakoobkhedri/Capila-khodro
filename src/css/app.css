@@ -464,6 +464,21 @@ input[type="number"]::-webkit-outer-spin-button {
   @apply ltr:[transform:rotateY(180deg)];
 }
 
+/* sidebar */
+.sidebar.active{
+  @apply rtl:right-0 ltr:left-0;
+}
+.sidebar ul li a.active{
+  color: #050B20;
+  font-weight: bold;
+}
+.sidebar ul li a.active img:first-child{
+  @apply opacity-100 visible rtl:-right-[18px] ltr:-left-[18px]
+}
+.sidebar ul li a.active svg path{
+  fill: #FF5354;
+  stroke: #FF5354;
+}
 
 /* responsive */
 
