@@ -471,12 +471,15 @@ input[type="number"]::-webkit-outer-spin-button {
 .sidebar ul li a.active{
   color: #050B20;
   font-weight: bold;
+  opacity: 100%;
 }
 .sidebar ul li a.active img:first-child{
   @apply opacity-100 visible rtl:-right-[18px] ltr:-left-[18px]
 }
-.sidebar ul li a.active svg path{
-  fill: #FF5354;
+.sidebar ul li a svg path{
+  transition: all .4s;
+}
+.sidebar ul li a.active svg path,.sidebar ul li a:hover svg path{
   stroke: #FF5354;
 }
 
