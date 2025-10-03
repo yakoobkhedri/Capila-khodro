@@ -446,6 +446,35 @@ input[type="number"]::-webkit-outer-spin-button {
   @apply text-sm text-[#2C2C2C];
 }
 
+/* tab */
+
+.tab,.tab p,.tab svg path{
+  transition: all .6s;
+}
+.tab.active{
+  z-index: 3;
+}
+.tab.active p{
+  color: white;
+  font-weight: 600;
+  opacity: 100%;
+  z-index: 3;
+}
+.tab.active svg path{
+  fill: #050B20;
+}
+.tabContent{
+  transition: all .6s;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.tabContent.active{
+  display: block;
+  visibility: visible;
+  opacity: 100%;
+}
+
 /* pagination */
 
 #pagination li a.active{
