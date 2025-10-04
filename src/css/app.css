@@ -448,19 +448,19 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* tab */
 
-.tab,.tab p,.tab svg path{
+.tab,.tab p,.tab svg path,.tab2,.tab2 p,.tab2 svg path{
   transition: all .6s;
 }
-.tab.active{
+.tab.active,.tab:hover,.tab2.active,.tab2:hover{
   z-index: 3;
 }
-.tab.active p{
+.tab.active p,.tab:hover p,.tab2.active p,.tab2:hover p{
   color: white;
   font-weight: 600;
   opacity: 100%;
   z-index: 3;
 }
-.tab.active svg path{
+.tab.active svg:first-child path,.tab:hover svg:first-child path,.tab2.active svg:first-child path,.tab2:hover svg:first-child path{
   fill: #050B20;
 }
 .tabContent{
