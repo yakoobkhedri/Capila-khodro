@@ -446,6 +446,24 @@ input[type="number"]::-webkit-outer-spin-button {
   @apply text-sm text-[#2C2C2C];
 }
 
+/* accordion */
+
+.accordionBtn svg,.accordionContent{
+  transition: all .4s;
+}
+
+.accordionBtn.active svg{
+  transform: rotate(180deg);
+}
+
+.accordionContent{
+  max-height: 0;
+  overflow: hidden;
+}
+.accordionContent.active{
+  max-height: 5000px;
+}
+
 /* tab */
 
 .tab,.tab p,.tab svg path,.tab2,.tab2 p,.tab2 svg path{
@@ -494,6 +512,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* sidebar */
+.sidebar{
+  box-shadow: 0 0 33px -3px #00000061;
+}
 .sidebar.active{
   @apply rtl:right-0 ltr:left-0;
 }

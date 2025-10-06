@@ -11,13 +11,142 @@
 
 <body class="max-w-[1536px] w-full mx-auto relative rtl:font-yekanBakhRegular ltr:font-MontserratRegular">
 
+  <!-- modals-->
+  <div class="modal">
+    <div style="visibility: hidden; opacity: 0;" data-modal-class="success-modal"
+      class="py-5 sm:py-0 flex modal-container bg-black/60 justify-center backdrop-blur-sm fixed inset-0 items-center overflow-auto px-4 sm:px-7 transition-all z-[100]">
+      <div class="modal-content bg-white rounded-[15px] sm:rounded-[30px] w-full max-w-[384px] px-3 sm:px-5 pb-[60px] relative">
+        <div class="mx-auto bg-[#BAFFC9] p-[9px] rounded-full w-[147px] h-[147px] mt-10">
+          <div class="rounded-full flex-center w-full h-full bg-[#65E380]">
+            <svg width="56" height="41" viewBox="0 0 56 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 24.25L16.8333 39.0834L53.9167 2.00003" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<script xmlns=""/></svg>
+          </div>
+        </div>
+        <p class="mt-6 text-center text-[22px] rtl:font-morabbaBold ltr:font-MontserratBold text-secondary">آگهی شما ثبت شد!</p>
+        <p class="text-secondary opacity-50 text-xs text-center mt-1 max-w-[277px] mx-auto">
+          آگهی فروش خودرو شما ثبت شد و پس از تایید در سایت نمایش داده میشود
+        </p>
+        <button class="p-2 absolute close-button group opacity-30 hover:opacity-100 transition-all left-4 ltr:left-auto ltr:right-4 top-4">
+          <svg class="w-4" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="group-hover:stroke-red-600 transition" d="M16 2L2 16M2 2L16 16" stroke="black"
+              stroke-width="2.15385" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+     <div style="visibility: hidden; opacity: 0;" data-modal-class="confirm-modal"
+      class="py-5 sm:py-0 flex modal-container bg-black/60 justify-center backdrop-blur-sm fixed inset-0 items-center overflow-auto px-4 sm:px-7 transition-all z-[100]">
+      <div class="modal-content bg-white rounded-[15px] sm:rounded-[30px] w-full max-w-[384px] px-3 sm:px-5 pb-7 relative">
+        <div class="mx-auto bg-[#BAFFC9] p-[9px] rounded-full w-[147px] h-[147px] mt-10">
+          <div class="rounded-full flex-center w-full h-full bg-[#65E380]">
+           <svg width="32" height="58" viewBox="0 0 32 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.62354 15.2999C1.62354 -2.59883 29.7485 -2.59883 29.7485 15.2999C29.7485 28.0837 16.9648 25.5262 16.9648 40.8674M16.9985 56.2874L17.036 56.2462" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<script xmlns=""/></svg>
+          </div>
+        </div>
+        <p class="mt-6 text-center text-[22px] rtl:font-morabbaBold ltr:font-MontserratBold text-secondary">آیا از ثبت تغییرات مطمئن هستید؟</p>
+        <div class="flex items-center mt-5 gap-5">
+          <button class="rounded-xl flex-center bg-[#EEF1FB] h-[58px] px-3 text-secondary flex-grow w-1/2">بازگشت</button>
+          <button class="rounded-xl flex-center bg-secondary h-[58px] px-3 text-white flex-grow w-1/2">ثبت تغییرات</button>
+        </div>
+        <button class="p-2 absolute close-button group opacity-30 hover:opacity-100 transition-all left-4 ltr:left-auto ltr:right-4 top-4">
+          <svg class="w-4" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="group-hover:stroke-red-600 transition" d="M16 2L2 16M2 2L16 16" stroke="black"
+              stroke-width="2.15385" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+     <div style="visibility: hidden; opacity: 0;" data-modal-class="error-modal"
+      class="py-5 sm:py-0 flex modal-container bg-black/60 justify-center backdrop-blur-sm fixed inset-0 items-center overflow-auto px-4 sm:px-7 transition-all z-[100]">
+      <div class="modal-content bg-white rounded-[15px] sm:rounded-[30px] w-full max-w-[384px] px-3 sm:px-5 pb-[60px] relative">
+        <div class="mx-auto bg-thirdry p-[9px] rounded-full w-[147px] h-[147px] mt-10">
+          <div class="rounded-full flex-center w-full h-full bg-primary">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 46L46 2.00003M2 2L46 46" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<script xmlns=""/></svg>
+          </div>
+        </div>
+        <p class="mt-6 text-center text-[22px] rtl:font-morabbaBold ltr:font-MontserratBold text-secondary">خطا در ثبت آگهی!</p>
+        <p class="text-secondary opacity-50 text-xs text-center mt-1 max-w-[277px] mx-auto">
+          لطفا تمامی موارد و فرم ها را به درستی و به دقت کامل کنید و سپس مجددا آگهی خود را ثبت کنید.
+        </p>
+        <button class="p-2 absolute close-button group opacity-30 hover:opacity-100 transition-all left-4 ltr:left-auto ltr:right-4 top-4">
+          <svg class="w-4" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="group-hover:stroke-red-600 transition" d="M16 2L2 16M2 2L16 16" stroke="black"
+              stroke-width="2.15385" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+     <div style="visibility: hidden; opacity: 0;" data-modal-class="check-modal"
+      class="py-5 sm:py-0 flex modal-container bg-black/60 justify-center backdrop-blur-sm fixed inset-0 items-center overflow-auto px-4 sm:px-7 transition-all z-[100]">
+      <div class="modal-content bg-white rounded-[15px] sm:rounded-[30px] w-full max-w-[485px] px-3 sm:px-5 pb-6 relative">
+        <div class="mx-auto bg-thirdry p-[9px] rounded-full w-[147px] h-[147px] mt-10">
+          <div class="rounded-full flex-center w-full h-full bg-primary">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 46L46 2.00003M2 2L46 46" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<script xmlns=""/></svg>
+          </div>
+        </div>
+        <p class="mt-6 text-center text-[22px] rtl:font-morabbaBold ltr:font-MontserratBold text-secondary">موارد مورد نیاز به برسی</p>
+        <p class="text-secondary opacity-50 text-xs text-center mt-1 max-w-[277px] mx-auto">
+         لطفا موارد زیر را اصلاح کنید و پس از ویرایش اقدام به ثبت مجدد آگهی کنید.
+        </p>
+        <div class="mt-5 rounded-[10px] bg-[#EEF1FB] p-3">
+           <div class="flex items-center gap-[7px] pt-[6px] first:pt-0 pb-[6px] last:pb-0 last:border-b-0 border-b border-[#00000017]">
+             <div class="w-[30px] h-[30px] rounded-[5px] bg-thirdry flex-center flex-shrink-0">
+               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 4.48539L10 10.4854M10 10.4854L16 16.4854M10 10.4854L4.00004 4.48529M10 10.4854L4.00003 16.4853" stroke="#FF5354" stroke-width="1.4375" stroke-linecap="round" stroke-linejoin="round"/>
+<script xmlns=""/></svg>
+             </div>
+             <div>
+              <p class="text-sm text-secondary font-bold">برگه کارشناسی:</p>
+              <p class="mt-0.5 text-secondary text-xs opacity-50">لطفا برگه کارشناسی خود را با وضوح بالا آپلود کنید.</p>
+             </div>
+           </div>
+           <div class="flex items-center gap-[7px] pt-[6px] first:pt-0 pb-[6px] last:pb-0 last:border-b-0 border-b border-[#00000017]">
+             <div class="w-[30px] h-[30px] rounded-[5px] bg-thirdry flex-center flex-shrink-0">
+               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 4.48539L10 10.4854M10 10.4854L16 16.4854M10 10.4854L4.00004 4.48529M10 10.4854L4.00003 16.4853" stroke="#FF5354" stroke-width="1.4375" stroke-linecap="round" stroke-linejoin="round"/>
+<script xmlns=""/></svg>
+             </div>
+             <div>
+              <p class="text-sm text-secondary font-bold">برگه کارشناسی:</p>
+              <p class="mt-0.5 text-secondary text-xs opacity-50">لطفا برگه کارشناسی خود را با وضوح بالا آپلود کنید.</p>
+             </div>
+           </div>
+           <div class="flex items-center gap-[7px] pt-[6px] first:pt-0 pb-[6px] last:pb-0 last:border-b-0 border-b border-[#00000017]">
+             <div class="w-[30px] h-[30px] rounded-[5px] bg-thirdry flex-center flex-shrink-0">
+               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 4.48539L10 10.4854M10 10.4854L16 16.4854M10 10.4854L4.00004 4.48529M10 10.4854L4.00003 16.4853" stroke="#FF5354" stroke-width="1.4375" stroke-linecap="round" stroke-linejoin="round"/>
+<script xmlns=""/></svg>
+             </div>
+             <div>
+              <p class="text-sm text-secondary font-bold">برگه کارشناسی:</p>
+              <p class="mt-0.5 text-secondary text-xs opacity-50">لطفا برگه کارشناسی خود را با وضوح بالا آپلود کنید.</p>
+             </div>
+           </div>
+        </div>
+        <button class="mt-5 bg-secondary flex-center text-white w-full rounded-xl h-[58px] px-2 font-bold">ویرایش تغییرات</button>
+        <button class="p-2 absolute close-button group opacity-30 hover:opacity-100 transition-all left-4 ltr:left-auto ltr:right-4 top-4">
+          <svg class="w-4" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="group-hover:stroke-red-600 transition" d="M16 2L2 16M2 2L16 16" stroke="black"
+              stroke-width="2.15385" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- main -->
   <main class="relative">
 
     <!-- dashboard -->
     <section>
       <div class="sm:p-8 p-4">
-        <div class="flex xl:gap-[30px] gap-4">
+        <div class="flex 2xl:gap-[30px] gap-4">
           <!-- sidebar -->
           <div id="sidebar"
             class="lg:rounded-[15px] bg-white w-[270px] px-[18px] pt-7 pb-9 xl:inset-y-auto inset-y-0 z-10 h-full overflow-y-auto xl:overflow-y-visible rtl:xl:right-0 rtl:-right-72 ltr:xl:left-0 ltr:-left-72 transition fixed xl:relative sidebar xl:flex-shrink-0">
@@ -267,8 +396,8 @@
               </div>
               <div class="relative p-3 sm:p-5 lg:pt-0 rounded-[15px] bg-white lg:bg-transparent">
                 <img alt="bg" src="../img/Rectangle 27 (9).png"
-                  class="absolute inset-0 w-full h-full ltrReverse z-2 min-h-[1458px] hidden lg:block">
-                <div class="flex items-end justify-between gap-4 sm:gap-20 relative flex-wrap">
+                  class="absolute inset-0 w-full h-full ltrReverse z-2 hidden lg:block">
+                <div class="flex items-end justify-between gap-4 md:gap-20 relative flex-wrap">
                   <div class="flex items-center gap-2.5 relative z-2 md:top-1 w-full sm:w-auto">
                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1 16.1667L16.1667 1M16.1667 1V15.56M16.1667 1H1.60667" stroke="#FF5354"
@@ -323,8 +452,8 @@
                   </div>
                 </div>
                 <div class="mt-5 grid grid-cols-12 gap-6 relative z-2">
-                  <div class="col-span-8">
-                    <form class="bg-[#EEF1FB] rounded-[15px] p-3 grid grid-cols-3 gap-3">
+                  <div class="lg:col-span-8 col-span-12">
+                    <form class="bg-[#EEF1FB] rounded-[15px] p-3 grid sm:grid-cols-2 xl:grid-cols-3 gap-3">
                       <div>
                         <p class="text-secondary font-bold text-xs mb-1.5">نام آگهی خودرو</p>
                         <input class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]"
@@ -413,7 +542,7 @@
                       </div>
                     </form>
                   </div>
-                  <div class="col-span-4">
+                  <div class="lg:col-span-4 col-span-12">
                     <form class="rounded-[15px] bg-[#EEF1FB] p-[14px] relative cursor-pointer">
                       <input type="file" class="absolute w-full h-full inset-0 cursor-pointer opacity-0">
                       <div class="rounded-[15px] border-2 border-dashed border-[#050b2020] flex-center py-[50px] px-6">
@@ -443,13 +572,13 @@
                     آگهی
                   </p>
                   <form class="mt-[22px] bg-[#EEF1FB] rounded-[15px] p-4 grid grid-cols-12 gap-4">
-                    <div class="col-span-3">
+                    <div class="lg:col-span-3 col-span-12">
                       <div class="mb-[14px]">
                         <p class="text-secondary font-bold text-xs mb-1.5">قیمت خودرو</p>
                         <input class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]"
                           placeholder="قیمت را به تومان وارد کنید">
                       </div>
-                      <div class="grid grid-cols-2 gap-3 mb-4">
+                      <div class="grid xl:grid-cols-2 gap-3 mb-4">
                         <div>
                           <p class="text-secondary font-bold text-xs mb-1.5">استان</p>
                           <select class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
@@ -481,7 +610,7 @@
                         </p>
                       </div>
                     </div>
-                    <div class="col-span-9">
+                    <div class="lg:col-span-9 col-span-12">
                       <div class="h-full">
                         <p class="text-secondary font-bold text-xs mb-1.5">متن توضیحات آگهی</p>
                         <textarea
@@ -496,6 +625,323 @@
                     <span class="rtl:font-morabbaBlack ltr:font-MontserratBold">کارشناسی</span>
                     خودرو
                   </p>
+                  <form class="bg-[#EEF1FB] rounded-[15px] p-4 mt-5">
+                    <div class="grid grid-cols-12 gap-4 pb-5 border-b border-[#0000001c]">
+                      <div class="lg:col-span-3 col-span-12">
+                        <div class="mb-[14px]">
+                          <p class="text-secondary font-bold text-xs mb-1.5">برگه کارشناسی</p>
+                          <div
+                            class="relative text-[11px] rounded-xl px-3 h-[46px] bg-white flex items-center justify-center gap-1.5">
+                            <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.5" clip-path="url(#clip0_438_3256)">
+                                <path
+                                  d="M7.99984 14.6666V8.66665M7.99984 8.66665L10.3332 11M7.99984 8.66665L5.6665 11M13.3332 11.738C14.3292 11.348 15.3332 10.4593 15.3332 8.66665C15.3332 5.99998 13.1112 5.33331 11.9998 5.33331C11.9998 3.99998 11.9998 1.33331 7.99984 1.33331C3.99984 1.33331 3.99984 3.99998 3.99984 5.33331C2.8885 5.33331 0.666504 5.99998 0.666504 8.66665C0.666504 10.4593 1.6705 11.348 2.6665 11.738"
+                                  stroke="#404040" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_438_3256">
+                                  <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                              </defs>
+                              <script xmlns="" />
+                            </svg>
+                            <p class="opacity-30">آپلود برگه کارشناسی خودرو</p>
+                            <input type="file" class="opacity-0 cursor-pointer inset-0 w-full h-full absolute">
+                          </div>
+                        </div>
+                        <div class="mb-[14px]">
+                          <p class="text-secondary font-bold text-xs mb-1.5">تاریخ کارشناسی</p>
+                          <select class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                            <option>نوع سوخت خودرو را انتخاب کنید</option>
+                            <option>نوع سوخت خودرو را انتخاب کنید</option>
+                            <option>نوع سوخت خودرو را انتخاب کنید</option>
+                          </select>
+                        </div>
+                        <div class="flex items-start gap-2.5 bg-thirdry rounded-[15px] text-primary text-xs p-4">
+                          <svg class="flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M12 11.5V16.5M12 7.51L12.01 7.499M12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22Z"
+                              stroke="#FF5354" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <script xmlns=""></script>
+                          </svg>
+                          <p>
+                            برای تایید آگهی و فروش خودرو بارگزاری فایل کارشناسی الزامی میباشد، در غیر این صورت شهر خودرو
+                            کاپیلا از فروش و آگهی خودرو معذور است.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="lg:col-span-9 col-span-12 rtl:lg:border-r ltr:lg:border-l border-[#0000001c] rtl:lg:pr-4 ltr:lg;pl-4">
+                        <div class="grid grid-cols-12 gap-4">
+                          <div class="sm:col-span-6 col-span-12">
+                            <p class="text-secondary font-bold">رنگ شدگی خودرو</p>
+                            <p class="text-secondary opacity-50 text-xs mt-0.5">لطفا نقاط رنگشدگی خودرو را علامت گذاری
+                              کنید</p>
+                          </div>
+                          <div class="sm:col-span-6 col-span-12">
+                            <img alt="img" src="../img/Car.png" class="w-full">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border-t first:border-t-0 border-[#0000001c]">
+                        <div class="py-2.5 flex items-center justify-between gap-2 cursor-pointer accordionBtn">
+                          <p class="font-bold text-secondary">بدنه + لاستیک</p>
+                          <div class="flex items-center gap-[7px]">
+                            <p class="text-secondary opacity-50 text-sm">۱۸ مورد</p>
+                            <svg class="flex-shrink-0" width="12" height="6" viewBox="0 0 12 6" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0.5L6 5.5L11 0.5" stroke="#050B20" stroke-width="1.01266"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                              <script xmlns="" />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="accordionContent">
+                          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[14px]">
+                            <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">سلامت ستون وسط سمت راننده</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>سالم</option>
+                                <option>سالم</option>
+                                <option>سالم</option>
+                              </select>
+                            </div>
+                            <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">سلامت ستون عقب سمت شاگرد</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>سالم</option>
+                                <option>سالم</option>
+                                <option>سالم</option>
+                              </select>
+                            </div>
+                            <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">سلامت ناودانی سمت شارگرد</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>سالم</option>
+                                <option>سالم</option>
+                                <option>سالم</option>
+                              </select>
+                            </div>
+                            <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">سلامت ناودانی سمت راننده</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>سالم</option>
+                                <option>سالم</option>
+                                <option>سالم</option>
+                              </select>
+                            </div>
+                             <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">لاستیک زاپاس</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>دارد</option>
+                                <option>دارد</option>
+                                <option>دارد</option>
+                              </select>
+                            </div>
+                             <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">درصد لاستیک زاپاس</p>
+                              <div class="flex items-center gap-3 bg-white text-[11px] rounded-xl px-3 h-[46px]">
+                                <input class="outline-none border-none w-full flex-grow bg-transparent h-full" placeholder="مثلا: ۸۰">
+                                <p class="flex-shrink-0">درصد</p>
+                              </div>
+                            </div>
+                             <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">درصد لاستیک جلو شاگرد</p>
+                              <div class="flex items-center gap-3 bg-white text-[11px] rounded-xl px-3 h-[46px]">
+                                <input class="outline-none border-none w-full flex-grow bg-transparent h-full" placeholder="مثلا: ۸۰">
+                                <p class="flex-shrink-0">درصد</p>
+                              </div>
+                            </div>
+                              <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">درصد لاستیک جلو راننده</p>
+                              <div class="flex items-center gap-3 bg-white text-[11px] rounded-xl px-3 h-[46px]">
+                                <input class="outline-none border-none w-full flex-grow bg-transparent h-full" placeholder="مثلا: ۸۰">
+                                <p class="flex-shrink-0">درصد</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="border-t first:border-t-0 border-[#0000001c]">
+                        <div class="py-2.5 flex items-center justify-between gap-2 cursor-pointer accordionBtn">
+                          <p class="font-bold text-secondary">موتور</p>
+                          <div class="flex items-center gap-[7px]">
+                            <p class="text-secondary opacity-50 text-sm">۱۸ مورد</p>
+                            <svg class="flex-shrink-0" width="12" height="6" viewBox="0 0 12 6" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0.5L6 5.5L11 0.5" stroke="#050B20" stroke-width="1.01266"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                              <script xmlns="" />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="accordionContent">
+                          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[14px]">
+                            <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">سلامت ستون وسط سمت راننده</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>سالم</option>
+                                <option>سالم</option>
+                                <option>سالم</option>
+                              </select>
+                            </div>
+                            <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">سلامت ستون عقب سمت شاگرد</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>سالم</option>
+                                <option>سالم</option>
+                                <option>سالم</option>
+                              </select>
+                            </div>
+                            <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">سلامت ناودانی سمت شارگرد</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>سالم</option>
+                                <option>سالم</option>
+                                <option>سالم</option>
+                              </select>
+                            </div>
+                            <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">سلامت ناودانی سمت راننده</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>سالم</option>
+                                <option>سالم</option>
+                                <option>سالم</option>
+                              </select>
+                            </div>
+                             <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">لاستیک زاپاس</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>دارد</option>
+                                <option>دارد</option>
+                                <option>دارد</option>
+                              </select>
+                            </div>
+                             <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">درصد لاستیک زاپاس</p>
+                              <div class="flex items-center gap-3 bg-white text-[11px] rounded-xl px-3 h-[46px]">
+                                <input class="outline-none border-none w-full flex-grow bg-transparent h-full" placeholder="مثلا: ۸۰">
+                                <p class="flex-shrink-0">درصد</p>
+                              </div>
+                            </div>
+                             <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">درصد لاستیک جلو شاگرد</p>
+                              <div class="flex items-center gap-3 bg-white text-[11px] rounded-xl px-3 h-[46px]">
+                                <input class="outline-none border-none w-full flex-grow bg-transparent h-full" placeholder="مثلا: ۸۰">
+                                <p class="flex-shrink-0">درصد</p>
+                              </div>
+                            </div>
+                              <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">درصد لاستیک جلو راننده</p>
+                              <div class="flex items-center gap-3 bg-white text-[11px] rounded-xl px-3 h-[46px]">
+                                <input class="outline-none border-none w-full flex-grow bg-transparent h-full" placeholder="مثلا: ۸۰">
+                                <p class="flex-shrink-0">درصد</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="border-t first:border-t-0 border-[#0000001c]">
+                        <div class="py-2.5 flex items-center justify-between gap-2 cursor-pointer accordionBtn">
+                          <p class="font-bold text-secondary">سیستم برقی + داخلی</p>
+                          <div class="flex items-center gap-[7px]">
+                            <p class="text-secondary opacity-50 text-sm">۱۸ مورد</p>
+                            <svg class="flex-shrink-0" width="12" height="6" viewBox="0 0 12 6" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0.5L6 5.5L11 0.5" stroke="#050B20" stroke-width="1.01266"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                              <script xmlns="" />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="accordionContent">
+                          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[14px]">
+                            <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">سلامت ستون وسط سمت راننده</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>سالم</option>
+                                <option>سالم</option>
+                                <option>سالم</option>
+                              </select>
+                            </div>
+                            <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">سلامت ستون عقب سمت شاگرد</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>سالم</option>
+                                <option>سالم</option>
+                                <option>سالم</option>
+                              </select>
+                            </div>
+                            <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">سلامت ناودانی سمت شارگرد</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>سالم</option>
+                                <option>سالم</option>
+                                <option>سالم</option>
+                              </select>
+                            </div>
+                            <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">سلامت ناودانی سمت راننده</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>سالم</option>
+                                <option>سالم</option>
+                                <option>سالم</option>
+                              </select>
+                            </div>
+                             <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">لاستیک زاپاس</p>
+                              <select
+                                class="bg-white outline-none w-full text-[11px] border-none rounded-xl px-3 h-[46px]">
+                                <option>دارد</option>
+                                <option>دارد</option>
+                                <option>دارد</option>
+                              </select>
+                            </div>
+                             <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">درصد لاستیک زاپاس</p>
+                              <div class="flex items-center gap-3 bg-white text-[11px] rounded-xl px-3 h-[46px]">
+                                <input class="outline-none border-none w-full flex-grow bg-transparent h-full" placeholder="مثلا: ۸۰">
+                                <p class="flex-shrink-0">درصد</p>
+                              </div>
+                            </div>
+                             <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">درصد لاستیک جلو شاگرد</p>
+                              <div class="flex items-center gap-3 bg-white text-[11px] rounded-xl px-3 h-[46px]">
+                                <input class="outline-none border-none w-full flex-grow bg-transparent h-full" placeholder="مثلا: ۸۰">
+                                <p class="flex-shrink-0">درصد</p>
+                              </div>
+                            </div>
+                              <div>
+                              <p class="text-secondary font-bold text-xs mb-1.5">درصد لاستیک جلو راننده</p>
+                              <div class="flex items-center gap-3 bg-white text-[11px] rounded-xl px-3 h-[46px]">
+                                <input class="outline-none border-none w-full flex-grow bg-transparent h-full" placeholder="مثلا: ۸۰">
+                                <p class="flex-shrink-0">درصد</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <button class="bg-secondary check-modal w-full font-bold text-white flex-center rounded-xl h-[58px] px-3 mt-6">ثبت و تایید نهایی آگهی</button>
                 </div>
               </div>
             </div>
@@ -508,6 +954,8 @@
 
   <script src="../js/sidebar.js"></script>
   <script src="../js/tabs.js"></script>
+  <script src="../js/accordion.js"></script>
+  <script src="../js/modal.js"></script>
 </body>
 
 </html>
