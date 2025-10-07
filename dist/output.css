@@ -818,6 +818,14 @@ video {
   grid-column: span 12 / span 12;
 }
 
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
+
+.col-span-7 {
+  grid-column: span 7 / span 7;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -1089,6 +1097,14 @@ video {
 
 .mt-\[71px\] {
   margin-top: 71px;
+}
+
+.mb-\[26px\] {
+  margin-bottom: 26px;
+}
+
+.mt-\[14px\] {
+  margin-top: 14px;
 }
 
 .line-clamp-1 {
@@ -1493,12 +1509,20 @@ video {
   width: 1px;
 }
 
+.w-\[21px\] {
+  width: 21px;
+}
+
 .w-\[23px\] {
   width: 23px;
 }
 
 .w-\[270px\] {
   width: 270px;
+}
+
+.w-\[280px\] {
+  width: 280px;
 }
 
 .w-\[30px\] {
@@ -1567,6 +1591,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[255px\] {
+  width: 255px;
 }
 
 .max-w-\[1536px\] {
@@ -2382,6 +2410,10 @@ video {
   padding-top: 3.5rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -2416,6 +2448,10 @@ video {
 
 .pt-\[6px\] {
   padding-top: 6px;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
 }
 
 .text-center {
@@ -2551,6 +2587,10 @@ video {
   line-height: 42px;
 }
 
+.leading-\[225\%\] {
+  line-height: 225%;
+}
+
 .text-\[\#00000061\] {
   color: #00000061;
 }
@@ -2597,6 +2637,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#4CC967\] {
+  --tw-text-opacity: 1;
+  color: rgb(76 201 103 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3061,6 +3106,18 @@ input[type="number"]::-webkit-outer-spin-button {
   /* برای Chrome, Safari و Opera */
 }
 
+/* after */
+
+.after-1::after{
+  position: absolute;
+  content: '';
+  background-color: #000000C2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
 /* editor */
 
 .editor-section {
@@ -3506,10 +3563,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* sidebar */
 
-.sidebar{
-  box-shadow: 0 0 33px -3px #00000061;
-}
-
 :is([dir="ltr"] .sidebar.active) {
   left: 0px;
 }
@@ -3547,7 +3600,10 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* responsive */
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  .sidebar{
+    box-shadow: 0 0 33px -3px #00000061;
+  }
 }
 
 @media (max-width: 640px) {
@@ -5098,6 +5154,10 @@ input[type="number"]::-webkit-outer-spin-button {
     grid-column: span 9 / span 9;
   }
 
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -5355,6 +5415,10 @@ input[type="number"]::-webkit-outer-spin-button {
 
   :is([dir="rtl"] .rtl\:lg\:pr-\[30px\]) {
     padding-right: 30px;
+  }
+
+  :is([dir="rtl"] .rtl\:lg\:pr-7) {
+    padding-right: 1.75rem;
   }
 }
 
