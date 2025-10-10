@@ -523,6 +523,20 @@ input[type="number"]::-webkit-outer-spin-button {
   @apply ltr:[transform:rotateY(180deg)];
 }
 
+/* readioIiput */
+
+.readioIiput svg{
+  opacity: 0;
+  transition: all .4s;
+}
+
+.readioIiput.active{
+  background-color: #FF5354;
+}
+.readioIiput.active svg{
+  opacity: 100%;
+}
+
 /* sidebar */
 .sidebar.active{
   @apply rtl:right-0 ltr:left-0;

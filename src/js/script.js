@@ -237,5 +237,78 @@ function convertPageNumbersToPersian() {
   });
 }
 
-// اجرا پس از لود صفحه
-document.addEventListener('DOMContentLoaded', convertPageNumbersToPersian);
+// readioIiput
+
+document.addEventListener('DOMContentLoaded', function() {
+  // فعال‌سازی رادیو باتن‌ها
+  function initializeRadioButtons() {
+    const radioInputs = document.querySelectorAll('.readioIiput');
+    
+    radioInputs.forEach(radioDiv => {
+      const radioInput = radioDiv.querySelector('input[type="radio"]');
+      
+      // تنظیم وضعیت اولیه بر اساس کلاس active
+      if (radioDiv.classList.contains('active')) {
+        radioInput.checked = true;
+      }
+      
+      // افزودن event listener برای کلیک روی والد مستقیم
+      const parentContainer = radioDiv.parentElement;
+      if (parentContainer) {
+        parentContainer.addEventListener('click', function(e) {
+          // جلوگیری از event bubbling اگر روی خود radioDiv کلیک شده
+          if (e.target !== radioDiv && !radioDiv.contains(e.target)) {
+            const parentForm = radioDiv.closest('form');
+            const allRadiosInGroup = parentForm.querySelectorAll('.readioIiput');
+            
+            // حذف کلاس active از همه رادیوها در این گروه
+            allRadiosInGroup.forEach(r => {
+              r.classList.remove('active');
+              const input = r.querySelector('input[type="radio"]');
+              if (input) input.checked = false;
+            });
+            
+            // اضافه کردن کلاس active به رادیو انتخاب شده
+            radioDiv.classList.add('active');
+            radioInput.checked = true;
+          }
+        });
+      }
+      
+      // همچنین event listener اصلی برای کلیک مستقیم روی radioDiv را نگه می‌داریم
+      radioDiv.addEventListener('click', function() {
+        const parentForm = this.closest('form');
+        const allRadiosInGroup = parentForm.querySelectorAll('.readioIiput');
+        
+        // حذف کلاس active از همه رادیوها در این گروه
+        allRadiosInGroup.forEach(r => {
+          r.classList.remove('active');
+          const input = r.querySelector('input[type="radio"]');
+          if (input) input.checked = false;
+        });
+        
+        // اضافه کردن کلاس active به رادیو انتخاب شده
+        this.classList.add('active');
+        radioInput.checked = true;
+      });
+    });
+  }
+  
+  // فعال‌سازی فرم‌های مختلف
+  function initializeForms() {
+    const forms = document.querySelectorAll('form[data-id]');
+    
+    // در ابتدا فقط فرم اول را نمایش بده
+    forms.forEach((form, index) => {
+      if (index === 0) {
+        form.classList.add('active');
+      } else {
+        form.classList.remove('active');
+      }
+    });
+  }
+  
+  // مقداردهی اولیه
+  initializeRadioButtons();
+  initializeForms();
+});
