@@ -556,6 +556,12 @@ input[type="number"]::-webkit-outer-spin-button {
   stroke: #FF5354;
 }
 
+/* header */
+
+header ul li a.active{
+  @apply text-primary;
+}
+
 /* responsive */
 
 @media (max-width: 1280px) {
